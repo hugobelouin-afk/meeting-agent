@@ -7,6 +7,20 @@
  "fixe": 17238.1812,
  "point_mort_valorise": 101.01713676598825,
  "capacite_jour": 318.5797518185286,
+ "budgets": {
+  "minimal": {
+   "total": 180789.44632447755,
+   "pre_ht": 130383
+  },
+  "confortable": {
+   "total": 293281.0963244776,
+   "pre_ht": 205333
+  },
+  "ambitieux": {
+   "total": 569652.2293919475,
+   "pre_ht": 345433
+  }
+ },
  "scenarios": {
   "prudent": {
    "ebitda": -98936.32472678478,

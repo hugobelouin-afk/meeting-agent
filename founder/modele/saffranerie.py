@@ -582,6 +582,96 @@ def sensibilites(H):
     return out
 
 
+def variante_budget(H, nom):
+    """Trois niveaux d'ouverture : minimal viable, confortable, ambitieux (scénario de volume central)."""
+    Hx = copy.deepcopy(H)
+    externes = ("Dépôt de garantie", "Honoraires", "Droit au bail", "Loyer et charges pendant")
+    mk = H["marketing"]
+    if nom == "minimal":
+        for it in Hx["investissement"]:
+            if it["label"].startswith(externes) or it["label"].startswith("Communication de lancement"):
+                continue
+            if "différable" in it["statut"]:
+                it["ht"] = 0
+            else:
+                it["ht"] = it["min"]
+        res = 0.10
+        mens, lanc = mk["B_mensuel"], mk["B_lancement"]
+    elif nom == "confortable":
+        res = 0.15
+        mens, lanc = mk["B_mensuel"] * 3, mk["B_lancement"] * 3
+    else:
+        for it in Hx["investissement"]:
+            if it["label"].startswith(externes) or it["label"].startswith("Communication de lancement") or it["nature"] == "depot":
+                continue
+            it["ht"] = it["max"]
+        res = 0.15
+        mens, lanc = mk["B_mensuel"] * 10, mk["B_lancement"] * 10
+    for it in Hx["investissement"]:
+        if it["label"].startswith("Communication de lancement"):
+            it["ht"] = lanc
+    sim = simulation(Hx, "central", marketing_mensuel=mens)
+    fin = financement(Hx, sim, reserve_taux=res)
+    return {"H": Hx, "sim": sim, "fin": fin, "mens": mens, "lanc": lanc, "reserve_taux": res,
+            "pm": point_mort(Hx, "central", marketing=mens)["tickets_jour"]}
+
+
+def rapport_budgets(H):
+    V = {k: variante_budget(H, k) for k in ("minimal", "confortable", "ambitieux")}
+    L = ["# Budgets d'ouverture comparés — La Saffranerie", "",
+         "Scénario de volume **central** dans les trois cas : on ne suppose pas que dépenser plus fait vendre plus (voir founder/marketing.md pour la contribution nécessaire). Montants HT sauf mention ; hypothèses %s." % H["version"], "",
+         "| poste | statut | minimal viable | confortable | ambitieux |", "| --- | --- | ---: | ---: | ---: |"]
+    for i, it in enumerate(H["investissement"]):
+        vals = [V[k]["H"]["investissement"][i]["ht"] for k in V]
+        L.append("| %s | %s | %s | %s | %s |" % (it["label"], it["statut"], *[e(v) for v in vals]))
+    L.append("| **Total investissements et pré-ouverture HT** | | %s |" % " | ".join(e(sum(x["ht"] for x in V[k]["H"]["investissement"])) for k in V))
+    L += ["", "| financement | minimal viable | confortable | ambitieux |", "| --- | ---: | ---: | ---: |"]
+    rows = [("1. Dépenses et engagements avant ouverture (HT)", lambda v: e(v["fin"]["pre_ht"])),
+            ("2. Stock initial + TVA avancée au creux", lambda v: e(v["fin"]["stock"] + v["fin"]["tva_avancee"])),
+            ("3. Pertes d'exploitation jusqu'au creux", lambda v: e(v["fin"]["exploitation"])),
+            ("Besoin maximal simulé (24 mois)", lambda v: e(v["fin"]["besoin_sim"])),
+            ("4. Réserve pour aléas", lambda v: "%s (%s)" % (e(v["fin"]["reserve"]), pc(v["reserve_taux"]))),
+            ("**Total à mobiliser**", lambda v: "**%s**" % e(v["fin"]["total"])),
+            ("Communication : lancement / mensuel", lambda v: "%s / %s" % (e(v["lanc"]), e(v["mens"]))),
+            ("Point mort (tickets/jour)", lambda v: n(math.ceil(v["pm"]))),
+            ("EBE année 1 (central, sans hausse de ventes)", lambda v: e(v["sim"]["annee"]["ebitda"])),
+            ("EBE année 2", lambda v: e(v["sim"]["annee2"]["ebitda"])),
+            ("Trésorerie cumulée à 24 mois (hors apport)", lambda v: e(v["sim"]["cum_fin"]))]
+    for lab, f in rows:
+        L.append("| %s | %s |" % (lab, " | ".join(f(V[k]) for k in V)))
+    return "\n".join(L) + "\n", V
+
+
+def rapport_sources(H):
+    L = ["# Sources des chiffres du modèle — La Saffranerie", "",
+         "Généré à partir de `founder/modele/hypotheses.json` (%s). Étiquettes : **C** communiqué par le porteur ; **V** vérifié (lien et date dans `founder/recherches/notes.md`) ; **E** estimation (fourchette) ; **H** hypothèse à tester. Aucun devis n'a été obtenu : toute ligne E ou H doit être remplacée par un devis ou une mesure." % H["version"], "",
+         "## Données communiquées et paramètres clés", "",
+         "- Loyer : 6 666,67 € HT HC/mois (C).",
+         "- Safran : coût d'achat Olympus Croci %s/g (%s) ; prix de cession %s/g (%s)." % (e(H["safran"]["cout_achat_oc_g"], 2), H["safran"]["source_cout"], e(H["safran"]["prix_cession_g"], 2), H["safran"]["source_cession"]),
+         "- Crème : %s ; safran %s g/kg (%s) ; mode retenu « %s »." % (", ".join("%s %s/kg (%s)" % (f["label"], e(f["cout_kg"], 2), f["source"]) for f in H["creme"]["formule_hypothese"]), n(H["creme"]["safran_g_par_kg"], 1), H["creme"]["source_safran"], H["creme"]["mode_retenu"]),
+         "- Commission carte : %s (%s)." % (pc(H["taux_cb"], 1), H["source_taux_cb"]),
+         "- Ouverture hypothétique : %s (%s)" % (H["calendrier"]["ouverture_hypothetique"], H["calendrier"]["_note"]),
+         "- Montée en puissance : %s (%s)" % (", ".join(n(x * 100) + " %" for x in H["montee_en_puissance"]), H["_rampe"]),
+         "- Saisonnalité : %s (%s)" % (", ".join("%s %s" % (NOMS_MOIS[int(k) - 1], n(v, 2)) for k, v in H["saisonnalite_calendaire"].items()), H["_saison"]),
+         "- Volumes de croisière : " + " ; ".join("%s %s tickets/jour (H : %s)" % (k, v["tickets_jour_croisiere"], v["_why"]) for k, v in H["scenarios"].items()),
+         "", "## Produits (prix TTC proposés, coûts unitaires HT)", "", "| produit | prix TTC | matières hors safran/crème | safran (g) | crème (g) | note / source |", "| --- | ---: | ---: | ---: | ---: | --- |"]
+    for p in H["produits"]:
+        L.append("| %s | %s | %s | %s | %s | %s |" % (p["nom"], e(p["prix_ttc"], 2), e(p["matieres"], 2), n(p["safran_g"], 2), n(p["creme_g"]), p.get("note", "") or "E"))
+    L += ["", "## Personnel", ""]
+    S = H["personnel"]
+    for k in ("src_ft", "src_resp", "src_pt", "src_mut", "src_prov", "src_fond"):
+        L.append("- " + S[k])
+    L += ["", "## Charges fixes mensuelles", "", "| poste | central | fourchette | source |", "| --- | ---: | --- | --- |"]
+    for c in H["charges_fixes"]:
+        L.append("| %s | %s | %s – %s | %s |" % (c["label"], e(c["central"]), e(c["min"]), e(c["max"]), c["source"]))
+    L += ["", "## Investissements et dépenses avant ouverture", "", "| poste | central HT | fourchette | statut | source |", "| --- | ---: | --- | --- | --- |"]
+    for it in H["investissement"]:
+        L.append("| %s | %s | %s – %s | %s | %s |" % (it["label"], e(it["ht"]), e(it["min"]), e(it["max"]), it["statut"], it["source"]))
+    L += ["", "## TVA", "", "- " + H["tva"]["_note"], "- Taux par produit : voir `founder/recherches/notes.md`, section TVA (BOFiP BOI-TVA-LIQ-30-10-10 et annexe BOI-ANNX-000495).", "",
+          "_Le modèle n'est ni un conseil fiscal, ni un conseil social, ni un conseil juridique. Un expert-comptable doit valider le montage, la convention collective, la TVA des produits et le calendrier de remboursement avant tout engagement._"]
+    return "\n".join(L) + "\n"
+
+
 def numbers_json(H):
     """Entrée pour unit_economics.py (skill founder-cfo) : unité = ticket, scénario central, planning retenu."""
     t = ticket_annuel(H, "central")
@@ -609,7 +699,7 @@ def numbers_json(H):
     fixed += [{"label": "Personnel (%s)" % H["personnel"]["planning_retenu"], "cost": round(cf["personnel"]["total"], 2)},
               {"label": "Communication mensuelle (B)", "cost": round(cf["marketing"], 2)}]
     startup = [{"label": it["label"], "cost": it["ht"]} for it in H["investissement"] if it["ht"]]
-    ramp = [round(r["tickets_jour"], 1) for r in sim["rows"] if r["t"] >= 0]
+    ramp = [round(r["tickets_jour"], 1) for r in sim["rows"] if 0 <= r["t"] < 12]
     return {"business": "La Saffranerie (rue du Dragon) — unité = ticket moyen, montants HT en euros",
             "unit": "ticket", "price": round(t["ht"], 4), "variable": variable, "fixed_monthly": fixed,
             "startup": startup, "days_per_month": H["calendrier"]["jours_par_mois"],
@@ -629,6 +719,9 @@ def main():
     open(os.path.join(SORTIES, "produits.md"), "w", encoding="utf-8").write(rapport_produits(H))
     txt, sims, fins = rapport_cfo(H)
     open(os.path.join(SORTIES, "cfo-modele.md"), "w", encoding="utf-8").write(txt)
+    open(os.path.join(ICI, "..", "cfo-sources.md"), "w", encoding="utf-8").write(rapport_sources(H))
+    bt, V = rapport_budgets(H)
+    open(os.path.join(SORTIES, "budgets.md"), "w", encoding="utf-8").write(bt)
     nj = numbers_json(H)
     json.dump(nj, open(os.path.join(ICI, "..", "numbers.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     t = ticket_annuel(H, "central")
@@ -637,6 +730,7 @@ def main():
            "point_mort_tickets": pm["tickets_jour"], "fixe": pm["fixe"],
            "point_mort_valorise": point_mort(H, "central", valoriser=True, t=t)["tickets_jour"],
            "capacite_jour": capacite(H, t)["jour"],
+           "budgets": {k: {"total": V[k]["fin"]["total"], "pre_ht": V[k]["fin"]["pre_ht"]} for k in V},
            "scenarios": {s: {"ebitda": sims[s]["annee"]["ebitda"], "ca_ht": sims[s]["annee"]["ca_ht"],
                              "besoin": sims[s]["besoin_max"], "financement": fins[s]["total"]} for s in sims}}
     json.dump(res, open(os.path.join(SORTIES, "resultats.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
