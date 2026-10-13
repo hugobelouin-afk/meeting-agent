@@ -1,6 +1,6 @@
 # Coût et marge par produit — La Saffranerie
 
-Généré par `founder/modele/saffranerie.py` à partir de `founder/modele/hypotheses.json` (v1 — 13/10/2026 (avant les étapes ops et marketing)).
+Généré par `founder/modele/saffranerie.py` à partir de `founder/modele/hypotheses.json` (v2 — 13/10/2026 (après les étapes marketing et ops)).
 Prix TTC proposés ; HT calculé avec la TVA sur place / à emporter et la part consommée sur place ; safran au prix de cession (2,00 €/g) ; crème au coût complet (29,23 €/kg, mode « faconnier »). Pertes = % des matières. Carte bancaire = 1,5 % du TTC.
 
 Statuts : ouverture, saison (avril–septembre), ouverture_si_test (signature : seulement si le test de faisabilité est concluant), report (après preuve de demande et faisabilité de la cuisson), retire (non recommandé).
@@ -17,8 +17,8 @@ Statuts : ouverture, saison (avril–septembre), ouverture_si_test (signature : 
 | Signature « Or blanc » : infusion claire + cristal de sucre au safran | ouverture_si_test | 6,50 € | 5,91 € | 0,25 € | 0,12 € | 0,00 € | 0,11 € | 0,02 € | 0,10 € | 0,60 € | 5,31 € | 90 % |
 | Croissant pur beurre | ouverture | 2,20 € | 2,06 € | 0,62 € | 0,00 € | 0,00 € | 0,03 € | 0,09 € | 0,03 € | 0,78 € | 1,28 € | 62 % |
 | Croissant fourré à la crème au safran | ouverture | 4,50 € | 4,21 € | 0,62 € | 0,00 € | 0,88 € | 0,04 € | 0,15 € | 0,07 € | 1,75 € | 2,46 € | 58 % |
-| Glace safran (partenaire) 1 boule | saison | 4,00 € | 3,64 € | 0,67 € | 0,00 € | 0,00 € | 0,12 € | 0,07 € | 0,06 € | 0,91 € | 2,72 € | 75 % |
-| Glace 2 boules (safran + un parfum) | saison | 6,50 € | 5,91 € | 1,33 € | 0,00 € | 0,00 € | 0,12 € | 0,13 € | 0,10 € | 1,68 € | 4,23 € | 72 % |
+| Glace safran (partenaire) 1 boule | saison | 4,00 € | 3,64 € | 0,98 € | 0,00 € | 0,00 € | 0,12 € | 0,10 € | 0,06 € | 1,25 € | 2,38 € | 66 % |
+| Glace 2 boules (safran + un parfum) | saison | 6,50 € | 5,91 € | 1,96 € | 0,00 € | 0,00 € | 0,12 € | 0,20 € | 0,10 € | 2,37 € | 3,54 € | 60 % |
 | Crêpe sucre | report | 4,50 € | 4,09 € | 0,28 € | 0,00 € | 0,00 € | 0,07 € | 0,02 € | 0,07 € | 0,43 € | 3,66 € | 89 % |
 | Crêpe Nutella | retire | 6,00 € | 5,45 € | 0,49 € | 0,00 € | 0,00 € | 0,07 € | 0,03 € | 0,09 € | 0,68 € | 4,78 € | 88 % |
 | Crêpe à la crème au safran | report | 7,00 € | 6,36 € | 0,20 € | 0,00 € | 1,02 € | 0,07 € | 0,07 € | 0,10 € | 1,47 € | 4,89 € | 77 % |

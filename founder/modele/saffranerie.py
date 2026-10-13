@@ -427,7 +427,7 @@ def rapport_cfo(H):
     L += ["| **Total charges fixes décaissées** | **%s** | |" % e(cf["total"]), "",
           "- Travail des fondateurs non rémunéré dans ce planning : %s h/semaine, valorisé à %s/mois au coût d'un responsable de boutique." % (
               n(cf["personnel"]["fond_h"]), e(cf["personnel"]["fond_valorisation"])),
-          "- CFE non comptée en année 1 (exonération l'année de création, à confirmer) ; amortissements hors charges fixes décaissées.", ""]
+          "- La CFE est provisionnée (estimation) ; les amortissements ne font pas partie des charges fixes décaissées.", ""]
     # 3. point mort
     pmv = point_mort(H, "central", valoriser=True, t=t)
     pms = point_mort(H, "central", t=ticket_annuel_avec_signature(H))

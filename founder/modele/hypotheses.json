@@ -1,6 +1,6 @@
 {
  "_lisez_moi": "Hypothèses du modèle La Saffranerie. Chaque valeur porte une étiquette 'source' : C = communiquée par le porteur, V = vérifiée (voir founder/recherches/notes.md et founder/cfo-sources.md), E = estimation (fourchette donnée), H = hypothèse à tester. Montants en euros. HT sauf mention TTC.",
- "version": "v1 — 13/10/2026 (avant les étapes ops et marketing)",
+ "version": "v2 — 13/10/2026 (après les étapes marketing et ops)",
  "calendrier": {
   "ouverture_hypothetique": "2027-04-01",
   "_note": "Date HYPOTHÉTIQUE retenue pour le calcul : test réel en novembre-décembre 2026, décision et bail en janvier 2027, travaux février-mars 2027. Aucun calendrier n'est arrêté (C).",
@@ -269,14 +269,14 @@
    "part_sp": 0.2,
    "tva_sp": 0.1,
    "tva_emp": 0.1,
-   "matieres": 0.67,
+   "matieres": 0.98,
    "safran_g": 0,
    "creme_g": 0,
    "emb_sp": 0.1,
    "emb_emp": 0.12,
    "perte": 0.1,
    "temps_s": 45,
-   "note": "bac partenaire ≈ 9,50 €/L (E, aucun devis) ; boule 70 ml"
+   "note": "bac partenaire ≈ 14 €/L (E : 50 % du prix public de 28 €/L du Bac à Glaces, aucun devis) ; boule 70 ml"
   },
   {
    "id": "glace_2",
@@ -287,7 +287,7 @@
    "part_sp": 0.2,
    "tva_sp": 0.1,
    "tva_emp": 0.1,
-   "matieres": 1.33,
+   "matieres": 1.96,
    "safran_g": 0,
    "creme_g": 0,
    "emb_sp": 0.1,
@@ -603,9 +603,9 @@
  "horaires": {
   "ouverture": "10h00-19h00, 7 j/7",
   "heures_ouverture_semaine": 63,
-  "presence_poste1_semaine": 70,
-  "renfort_poste2_semaine": 40,
-  "_poste2": "renfort 13h-18h du lundi au vendredi (25 h) et 11h30-19h le week-end (15 h)",
+  "presence_poste1_semaine": 98,
+  "renfort_poste2_semaine": 38,
+  "_poste2": "deux postes de 7 h par jour (9h30-16h30 et 12h30-19h30), soit 4 h de recouvrement quotidien (28 h), plus un renfort de week-end 14h-19h (10 h)",
   "part_ventes_heure_pointe": 0.15,
   "administration_semaine": 6
  },
@@ -627,7 +627,7 @@
   "src_fond": "Coût chargé d'un responsable de boutique à 2 500 € brut / 151,67 h (V via URSSAF)",
   "plannings": {
    "S1_intention": {
-    "label": "Intention du porteur : 1 salarié + Hugo (midis, fins de journée, un week-end sur deux) + Laurent (un week-end sur deux)",
+    "label": "Intention du porteur : 1 CDI + Hugo (midis, fins de journée, un week-end sur deux) + Laurent (un week-end sur deux) — laisse ≈ 33 h/semaine sans personne",
     "salaries": [
      [
       "Barista-conseiller CDI 35 h",
@@ -649,7 +649,7 @@
     "provision": 0.05
    },
    "S2_minimal": {
-    "label": "Planning minimal viable : 2 CDI 35 h + 1 temps partiel 24 h + Hugo 22 h (dont 6 h de gestion)",
+    "label": "Planning minimal viable : 2 CDI 35 h + 1 temps partiel 21 h + fondateurs (Hugo ≈ 20 h dont 11 h de gestion et de communication, Laurent ≈ 8 h)",
     "salaries": [
      [
       "Barista-conseiller CDI 35 h",
@@ -662,26 +662,26 @@
       35
      ],
      [
-      "Équipier temps partiel 24 h (week-end + 2 après-midi)",
+      "Équipier temps partiel 21 h",
       "pt",
-      24
+      21
      ]
     ],
     "fondateurs": [
      [
       "Hugo",
-      22
+      20
      ],
      [
       "Laurent",
-      0
+      8
      ]
     ],
-    "heures_couvertes_salaries": 94,
+    "heures_couvertes_salaries": 91,
     "provision": 0.08
    },
    "S3_autonome": {
-    "label": "Exploitation autonome : 1 responsable + 1 CDI + 2 temps partiels (24 h et 16 h), fondateurs hors exploitation",
+    "label": "Exploitation autonome : 1 responsable + 1 CDI + 2 temps partiels (21 h et 17 h), fondateurs hors exploitation",
     "salaries": [
      [
       "Responsable de boutique CDI 35 h",
@@ -694,14 +694,14 @@
       35
      ],
      [
-      "Équipier temps partiel 24 h",
+      "Équipier temps partiel 21 h",
       "pt",
-      24
+      21
      ],
      [
-      "Équipier temps partiel 16 h",
+      "Équipier temps partiel 17 h (week-end)",
       "pt",
-      16
+      17
      ]
     ],
     "fondateurs": [
@@ -714,7 +714,7 @@
       0
      ]
     ],
-    "heures_couvertes_salaries": 110,
+    "heures_couvertes_salaries": 108,
     "provision": 0.08
    }
   },
@@ -846,12 +846,21 @@
    "tva": 0.2,
    "statut": "indispensable",
    "source": "E"
+  },
+  {
+   "label": "CFE (provision)",
+   "central": 100,
+   "min": 50,
+   "max": 250,
+   "tva": 0.0,
+   "statut": "indispensable",
+   "source": "E : base = immobilisations au 31/12 de l'année de création (art. 1478-II CGI) ; montant à demander au service des impôts des entreprises"
   }
  ],
  "marketing": {
-  "B_lancement": 5800,
+  "B_lancement": 6800,
   "B_mensuel": 650,
-  "_note": "PROVISOIRE : budget B estimé avant l'étape marketing ; recalculé ensuite dans founder/marketing.md.",
+  "_note": "Budget B calculé dans founder/marketing.md : 6 800 € de lancement + 650 €/mois. 3B et 10B en variantes.",
   "retenu": "B"
  },
  "investissement": [
@@ -1076,14 +1085,14 @@
   },
   {
    "label": "Communication de lancement (budget B)",
-   "ht": 5800,
-   "min": 5800,
-   "max": 58000,
+   "ht": 6800,
+   "min": 6800,
+   "max": 68000,
    "tva": 0.2,
    "nature": "charge_preouverture",
    "statut": "indispensable",
    "mois": 0,
-   "source": "Calcul founder/marketing.md"
+   "source": "Calcul founder/marketing.md (B)"
   },
   {
    "label": "Stock initial (safran conditionné, pots de crème, café, emballages)",

@@ -1,0 +1,1124 @@
+{
+ "_lisez_moi": "Hypothèses du modèle La Saffranerie. Chaque valeur porte une étiquette 'source' : C = communiquée par le porteur, V = vérifiée (voir founder/recherches/notes.md et founder/cfo-sources.md), E = estimation (fourchette donnée), H = hypothèse à tester. Montants en euros. HT sauf mention TTC.",
+ "version": "v1 — 13/10/2026 (avant les étapes ops et marketing)",
+ "calendrier": {
+  "ouverture_hypothetique": "2027-04-01",
+  "_note": "Date HYPOTHÉTIQUE retenue pour le calcul : test réel en novembre-décembre 2026, décision et bail en janvier 2027, travaux février-mars 2027. Aucun calendrier n'est arrêté (C).",
+  "mois_loyer_avant_ouverture": 2,
+  "_note_loyer": "Bail signé le 1er février 2027, ouverture le 1er avril 2027 : 2 mois de loyer payés pendant les travaux, sauf franchise négociée (E : 0 à 3 mois).",
+  "jours_par_mois": 30
+ },
+ "safran": {
+  "cout_achat_oc_g": 1.6,
+  "source_cout": "C : safran iranien acheté au kilo ≈ 1 600 €/kg",
+  "prix_cession_g": 2.0,
+  "source_cession": "H : coût Olympus Croci + 25 % (sélection, contrôle, logistique). À fixer par une convention intra-groupe écrite. Sensibilité : 1,60 / 2,00 / 6,00 / 12,00 €/g."
+ },
+ "creme": {
+  "_note": "Recette gustative supposée trouvée (C). Formulation chiffrée ici = HYPOTHÈSE à remplacer par la fiche recette réelle.",
+  "formule_hypothese": [
+   {
+    "label": "chocolat blanc de couverture (55 %)",
+    "part": 0.55,
+    "cout_kg": 22.0,
+    "source": "E : 16 €/kg (Callebaut, estimation) à 28–36 €/kg (Valrhona Ivoire, prix revendeur vérifiés)"
+   },
+   {
+    "label": "autres ingrédients : lait en poudre, matière grasse, sucre (45 %)",
+    "part": 0.45,
+    "cout_kg": 5.0,
+    "source": "E"
+   }
+  ],
+  "safran_g_par_kg": 1.0,
+  "source_safran": "H : 1 g/kg, soit 10 fois la dose « dessert lacté » de 0,1 g/L (V) ; à calibrer en dégustation",
+  "modes": {
+   "interne": {
+    "main_oeuvre_kg": 4.0,
+    "perte": 0.05,
+    "capex": 9000,
+    "lot_min_kg": 5,
+    "source": "E : 1,5 h pour 10 kg + mise en pot ; mélangeur-broyeur et petit matériel 5 000–15 000 € ; local et plan de maîtrise sanitaire requis"
+   },
+   "faconnier": {
+    "facon_kg": 12.0,
+    "perte": 0.03,
+    "capex": 0,
+    "lot_min_kg": 100,
+    "frais_lancement": 1500,
+    "source": "E : 8–18 €/kg de façon selon volume ; minimum de commande 50–500 kg ; aucun devis obtenu"
+   },
+   "hybride": {
+    "facon_kg": 12.0,
+    "perte": 0.04,
+    "capex": 2500,
+    "lot_min_kg": 50,
+    "frais_lancement": 1500,
+    "source": "E : pots chez un façonnier ; version « fourrage » assemblée en boutique (petit matériel)"
+   }
+  },
+  "mode_retenu": "faconnier"
+ },
+ "taux_cb": 0.015,
+ "source_taux_cb": "V : SumUp 1,75 % sans abonnement, 1,55 % hors cartes premium ; 1,5 % = hypothèse après négociation (E)",
+ "produits": [
+  {
+   "id": "espresso",
+   "nom": "Espresso",
+   "cat": "boissons",
+   "statut": "ouverture",
+   "prix_ttc": 3.0,
+   "part_sp": 0.45,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.42,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.04,
+   "emb_emp": 0.1,
+   "perte": 0.04,
+   "temps_s": 60,
+   "note": "café 16 g à 26 €/kg (E)"
+  },
+  {
+   "id": "latte",
+   "nom": "Latte / café crème 30 cl",
+   "cat": "boissons",
+   "statut": "ouverture",
+   "prix_ttc": 5.0,
+   "part_sp": 0.35,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.7,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.16,
+   "perte": 0.04,
+   "temps_s": 90,
+   "note": "café 0,42 + lait 250 ml à 1,10 €/L (E)"
+  },
+  {
+   "id": "latte_safran",
+   "nom": "Latte au safran 30 cl (non sucré)",
+   "cat": "boissons",
+   "statut": "ouverture",
+   "prix_ttc": 6.0,
+   "part_sp": 0.35,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.72,
+   "safran_g": 0.05,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.16,
+   "perte": 0.04,
+   "temps_s": 100,
+   "note": "0,05 g de safran ≈ 22–30 filaments (H, à calibrer)"
+  },
+  {
+   "id": "frappe",
+   "nom": "Latte frappé 40 cl",
+   "cat": "boissons",
+   "statut": "saison",
+   "prix_ttc": 5.5,
+   "part_sp": 0.25,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.7,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.06,
+   "emb_emp": 0.2,
+   "perte": 0.04,
+   "temps_s": 100,
+   "note": "saison avril-septembre"
+  },
+  {
+   "id": "frappe_safran",
+   "nom": "Latte frappé au safran 40 cl (glaçons de safran)",
+   "cat": "boissons",
+   "statut": "saison",
+   "prix_ttc": 6.5,
+   "part_sp": 0.25,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.72,
+   "safran_g": 0.06,
+   "creme_g": 0,
+   "emb_sp": 0.06,
+   "emb_emp": 0.2,
+   "perte": 0.05,
+   "temps_s": 110,
+   "note": "glaçons d'infusion de safran : effet visuel sans sucre (H)"
+  },
+  {
+   "id": "the",
+   "nom": "Thé en feuilles",
+   "cat": "boissons",
+   "statut": "ouverture",
+   "prix_ttc": 4.5,
+   "part_sp": 0.5,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.2,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.14,
+   "perte": 0.03,
+   "temps_s": 60,
+   "note": "3 g à 60 €/kg (E)"
+  },
+  {
+   "id": "infusion_safran",
+   "nom": "Infusion de safran (thé blanc ou nature)",
+   "cat": "boissons",
+   "statut": "ouverture",
+   "prix_ttc": 5.5,
+   "part_sp": 0.5,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.12,
+   "safran_g": 0.06,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.14,
+   "perte": 0.03,
+   "temps_s": 70,
+   "note": ""
+  },
+  {
+   "id": "signature",
+   "nom": "Signature « Or blanc » : infusion claire + cristal de sucre au safran",
+   "cat": "boissons",
+   "statut": "ouverture_si_test",
+   "prix_ttc": 6.5,
+   "part_sp": 0.7,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.25,
+   "safran_g": 0.06,
+   "creme_g": 0,
+   "emb_sp": 0.08,
+   "emb_emp": 0.18,
+   "perte": 0.06,
+   "temps_s": 120,
+   "note": "verre transparent ; cristal 5 g fabriqué maison (H). Retirée du point mort par prudence (condition C1 du board) : voir scénario."
+  },
+  {
+   "id": "croissant",
+   "nom": "Croissant pur beurre",
+   "cat": "gourmandises",
+   "statut": "ouverture",
+   "prix_ttc": 2.2,
+   "part_sp": 0.3,
+   "tva_sp": 0.1,
+   "tva_emp": 0.055,
+   "matieres": 0.62,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.02,
+   "emb_emp": 0.04,
+   "perte": 0.15,
+   "temps_s": 30,
+   "note": "croissant 70 g surgelé premium cuit sur place, 0,45–0,85 € (E) ; artisan livré 1,00–1,40 € (E)"
+  },
+  {
+   "id": "croissant_safran",
+   "nom": "Croissant fourré à la crème au safran",
+   "cat": "gourmandises",
+   "statut": "ouverture",
+   "prix_ttc": 4.5,
+   "part_sp": 0.3,
+   "tva_sp": 0.1,
+   "tva_emp": 0.055,
+   "matieres": 0.62,
+   "safran_g": 0,
+   "creme_g": 30,
+   "emb_sp": 0.02,
+   "emb_emp": 0.05,
+   "perte": 0.1,
+   "temps_s": 60,
+   "note": "fourré à la demande (30 g)"
+  },
+  {
+   "id": "formule",
+   "nom": "Formule « Dégustation » : latte au safran + croissant au safran",
+   "cat": "formules",
+   "statut": "ouverture",
+   "prix_ttc": 9.5,
+   "part_sp": 0.45,
+   "tva_sp": 0.1,
+   "tva_emp": 0.088,
+   "matieres": 1.34,
+   "safran_g": 0.05,
+   "creme_g": 30,
+   "emb_sp": 0.07,
+   "emb_emp": 0.21,
+   "perte": 0.07,
+   "temps_s": 150,
+   "note": "TVA à emporter mixte (10 % boisson, 5,5 % viennoiserie) : taux moyen pondéré 8,8 % (E)"
+  },
+  {
+   "id": "glace_1",
+   "nom": "Glace safran (partenaire) 1 boule",
+   "cat": "gourmandises",
+   "statut": "saison",
+   "prix_ttc": 4.0,
+   "part_sp": 0.2,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.67,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.1,
+   "emb_emp": 0.12,
+   "perte": 0.1,
+   "temps_s": 45,
+   "note": "bac partenaire ≈ 9,50 €/L (E, aucun devis) ; boule 70 ml"
+  },
+  {
+   "id": "glace_2",
+   "nom": "Glace 2 boules (safran + un parfum)",
+   "cat": "gourmandises",
+   "statut": "saison",
+   "prix_ttc": 6.5,
+   "part_sp": 0.2,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 1.33,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.1,
+   "emb_emp": 0.12,
+   "perte": 0.1,
+   "temps_s": 60,
+   "note": ""
+  },
+  {
+   "id": "crepe_sucre",
+   "nom": "Crêpe sucre",
+   "cat": "gourmandises",
+   "statut": "report",
+   "prix_ttc": 4.5,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.28,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.06,
+   "temps_s": 150,
+   "note": "pâte maison 0,20 + sucre/beurre 0,08 (E)"
+  },
+  {
+   "id": "crepe_nutella",
+   "nom": "Crêpe Nutella",
+   "cat": "gourmandises",
+   "statut": "retire",
+   "prix_ttc": 6.0,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.49,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.06,
+   "temps_s": 150,
+   "note": "30 g de pâte à tartiner à ≈ 9,50 €/kg (E)"
+  },
+  {
+   "id": "crepe_safran",
+   "nom": "Crêpe à la crème au safran",
+   "cat": "gourmandises",
+   "statut": "report",
+   "prix_ttc": 7.0,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.2,
+   "safran_g": 0,
+   "creme_g": 35,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.06,
+   "temps_s": 150,
+   "note": ""
+  },
+  {
+   "id": "gaufre_sucre",
+   "nom": "Gaufre sucre",
+   "cat": "gourmandises",
+   "statut": "report",
+   "prix_ttc": 5.0,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.43,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.08,
+   "temps_s": 180,
+   "note": "pâte 0,35 + sucre 0,08 (E)"
+  },
+  {
+   "id": "gaufre_nutella",
+   "nom": "Gaufre Nutella",
+   "cat": "gourmandises",
+   "statut": "retire",
+   "prix_ttc": 6.5,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.64,
+   "safran_g": 0,
+   "creme_g": 0,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.08,
+   "temps_s": 180,
+   "note": ""
+  },
+  {
+   "id": "gaufre_safran",
+   "nom": "Gaufre à la crème au safran",
+   "cat": "gourmandises",
+   "statut": "report",
+   "prix_ttc": 7.5,
+   "part_sp": 0.4,
+   "tva_sp": 0.1,
+   "tva_emp": 0.1,
+   "matieres": 0.35,
+   "safran_g": 0,
+   "creme_g": 35,
+   "emb_sp": 0.05,
+   "emb_emp": 0.08,
+   "perte": 0.08,
+   "temps_s": 180,
+   "note": ""
+  },
+  {
+   "id": "safran_05",
+   "nom": "Safran en filaments 0,5 g (lot et analyse affichés)",
+   "cat": "safran",
+   "statut": "ouverture",
+   "prix_ttc": 12.0,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 1.2,
+   "safran_g": 0.5,
+   "creme_g": 0,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.01,
+   "temps_s": 150,
+   "note": "fiole verre, étui, étiquette lot (E : 0,80–2,00 €)"
+  },
+  {
+   "id": "safran_1",
+   "nom": "Safran en filaments 1 g",
+   "cat": "safran",
+   "statut": "ouverture",
+   "prix_ttc": 22.0,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 1.4,
+   "safran_g": 1.0,
+   "creme_g": 0,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.01,
+   "temps_s": 150,
+   "note": ""
+  },
+  {
+   "id": "safran_2",
+   "nom": "Safran en filaments 2 g",
+   "cat": "safran",
+   "statut": "ouverture",
+   "prix_ttc": 40.0,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 1.6,
+   "safran_g": 2.0,
+   "creme_g": 0,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.01,
+   "temps_s": 150,
+   "note": ""
+  },
+  {
+   "id": "pot_100",
+   "nom": "Crème au safran, pot 100 g",
+   "cat": "pots",
+   "statut": "ouverture",
+   "prix_ttc": 10.5,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 0.65,
+   "safran_g": 0,
+   "creme_g": 100,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.03,
+   "temps_s": 60,
+   "note": "pot verre 106 ml + capsule + étiquette (E). TVA 5,5 % si qualifiée de pâte à tartiner (BOFiP § 210) ; 20 % si chocolat blanc ou confiserie : à confirmer"
+  },
+  {
+   "id": "pot_200",
+   "nom": "Crème au safran, pot 200 g",
+   "cat": "pots",
+   "statut": "ouverture",
+   "prix_ttc": 18.0,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 0.9,
+   "safran_g": 0,
+   "creme_g": 200,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.03,
+   "temps_s": 60,
+   "note": ""
+  },
+  {
+   "id": "coffret",
+   "nom": "Coffret cadeau : pot 100 g + safran 0,5 g",
+   "cat": "pots",
+   "statut": "ouverture",
+   "prix_ttc": 24.0,
+   "part_sp": 0.0,
+   "tva_sp": 0.055,
+   "tva_emp": 0.055,
+   "matieres": 3.35,
+   "safran_g": 0.5,
+   "creme_g": 100,
+   "emb_sp": 0,
+   "emb_emp": 0.05,
+   "perte": 0.02,
+   "temps_s": 120,
+   "note": "boîte 1,50 € + fiole et pot (E)"
+  }
+ ],
+ "mix_pour_100_tickets": {
+  "_note": "Unités vendues pour 100 tickets, carte d'ouverture recommandée (H, à calibrer par le test réel). 'saison' = unités en avril-septembre seulement ; elles sont nulles le reste de l'année.",
+  "permanent": {
+   "espresso": 16,
+   "latte": 13,
+   "latte_safran": 23,
+   "the": 4,
+   "infusion_safran": 5,
+   "signature": 0,
+   "croissant": 10,
+   "croissant_safran": 17,
+   "formule": 8,
+   "safran_05": 5,
+   "safran_1": 3.5,
+   "safran_2": 1,
+   "pot_100": 6,
+   "pot_200": 3.5,
+   "coffret": 2
+  },
+  "saison": {
+   "frappe": 4,
+   "frappe_safran": 8,
+   "glace_1": 8,
+   "glace_2": 6
+  },
+  "mois_saison": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "boost_cadeaux": {
+   "11": 1.3,
+   "12": 1.8
+  },
+  "_boost": "Multiplicateur des unités safran + pots en novembre et décembre (E : saison des cadeaux).",
+  "_signature": "La signature « Or blanc » est exclue du mix de base (condition C1 du board) ; 4 de ses 8 unités sont reportées sur le latte au safran. Sensibilité « avec la signature » : +8 unités, latte au safran ramené à 19."
+ },
+ "scenarios": {
+  "prudent": {
+   "tickets_jour_croisiere": 65,
+   "retail_mult": 0.7,
+   "_why": "Habitués peu convertis (panel : 1/7), clientèle surtout touristique et cadeaux ; part de safran/pots −30 %."
+  },
+  "central": {
+   "tickets_jour_croisiere": 95,
+   "retail_mult": 1.0,
+   "_why": "Hypothèse de travail à valider par comptage de passage et test réel."
+  },
+  "favorable": {
+   "tickets_jour_croisiere": 135,
+   "retail_mult": 1.2,
+   "_why": "Bouche-à-oreille et réseaux efficaces, rue passante, fidélisation d'une partie des voisins."
+  }
+ },
+ "montee_en_puissance": [
+  0.65,
+  0.62,
+  0.7,
+  0.76,
+  0.81,
+  0.85,
+  0.89,
+  0.92,
+  0.95,
+  0.97,
+  0.99,
+  1.0
+ ],
+ "_rampe": "E : mois 1 soutenu par l'ouverture, creux au mois 2, puis progression. Fraction du volume de croisière.",
+ "saisonnalite_calendaire": {
+  "1": 0.82,
+  "2": 0.85,
+  "3": 0.95,
+  "4": 1.03,
+  "5": 1.08,
+  "6": 1.08,
+  "7": 1.02,
+  "8": 0.88,
+  "9": 1.05,
+  "10": 1.03,
+  "11": 0.97,
+  "12": 1.2
+ },
+ "_saison": "E : forte fréquentation au printemps et à l'automne, creux en janvier-février et en août (Parisiens absents), pic de décembre (cadeaux). Aucune série mensuelle officielle trouvée.",
+ "horaires": {
+  "ouverture": "10h00-19h00, 7 j/7",
+  "heures_ouverture_semaine": 63,
+  "presence_poste1_semaine": 70,
+  "renfort_poste2_semaine": 40,
+  "_poste2": "renfort 13h-18h du lundi au vendredi (25 h) et 11h30-19h le week-end (15 h)",
+  "part_ventes_heure_pointe": 0.15,
+  "administration_semaine": 6
+ },
+ "personnel": {
+  "salaire_ft_brut": 2100,
+  "cout_ft": 2438.91,
+  "src_ft": "V : simulateur URSSAF (CDI, Paris) pour 2 100 € brut",
+  "salaire_resp_brut": 2500,
+  "cout_resp": 3162.65,
+  "src_resp": "V : simulateur URSSAF pour 2 500 € brut",
+  "taux_horaire_pt": 12.8,
+  "ratio_cout_pt": 1.1,
+  "src_pt": "V : SMIC 12,31 €/h depuis le 1/6/2026 ; ratio coût/brut interpolé entre 1,065 (SMIC) et 1,124 (2 000 € brut) d'après le simulateur URSSAF",
+  "mutuelle_medecine_par_salarie": 60,
+  "src_mut": "E : 40–70 €/mois",
+  "provision_absences": 0.08,
+  "src_prov": "E : congés payés à remplacer, dimanches et jours fériés, maladie",
+  "cout_horaire_fondateur_valorise": 21.25,
+  "src_fond": "Coût chargé d'un responsable de boutique à 2 500 € brut / 151,67 h (V via URSSAF)",
+  "plannings": {
+   "S1_intention": {
+    "label": "Intention du porteur : 1 salarié + Hugo (midis, fins de journée, un week-end sur deux) + Laurent (un week-end sur deux)",
+    "salaries": [
+     [
+      "Barista-conseiller CDI 35 h",
+      "ft",
+      35
+     ]
+    ],
+    "fondateurs": [
+     [
+      "Hugo",
+      30
+     ],
+     [
+      "Laurent",
+      10
+     ]
+    ],
+    "heures_couvertes_salaries": 35,
+    "provision": 0.05
+   },
+   "S2_minimal": {
+    "label": "Planning minimal viable : 2 CDI 35 h + 1 temps partiel 24 h + Hugo 22 h (dont 6 h de gestion)",
+    "salaries": [
+     [
+      "Barista-conseiller CDI 35 h",
+      "ft",
+      35
+     ],
+     [
+      "Barista-conseiller CDI 35 h",
+      "ft",
+      35
+     ],
+     [
+      "Équipier temps partiel 24 h (week-end + 2 après-midi)",
+      "pt",
+      24
+     ]
+    ],
+    "fondateurs": [
+     [
+      "Hugo",
+      22
+     ],
+     [
+      "Laurent",
+      0
+     ]
+    ],
+    "heures_couvertes_salaries": 94,
+    "provision": 0.08
+   },
+   "S3_autonome": {
+    "label": "Exploitation autonome : 1 responsable + 1 CDI + 2 temps partiels (24 h et 16 h), fondateurs hors exploitation",
+    "salaries": [
+     [
+      "Responsable de boutique CDI 35 h",
+      "resp",
+      35
+     ],
+     [
+      "Barista-conseiller CDI 35 h",
+      "ft",
+      35
+     ],
+     [
+      "Équipier temps partiel 24 h",
+      "pt",
+      24
+     ],
+     [
+      "Équipier temps partiel 16 h",
+      "pt",
+      16
+     ]
+    ],
+    "fondateurs": [
+     [
+      "Hugo",
+      0
+     ],
+     [
+      "Laurent",
+      0
+     ]
+    ],
+    "heures_couvertes_salaries": 110,
+    "provision": 0.08
+   }
+  },
+  "planning_retenu": "S2_minimal"
+ },
+ "charges_fixes": [
+  {
+   "label": "Loyer",
+   "central": 6666.67,
+   "min": 6666.67,
+   "max": 6666.67,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "C : 6 666,67 € HT HC/mois ; TVA sur loyer supposée (option du bailleur, à vérifier)"
+  },
+  {
+   "label": "Charges locatives et taxe foncière refacturées",
+   "central": 800,
+   "min": 500,
+   "max": 1200,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E : non communiquées ; 7–18 % du loyer"
+  },
+  {
+   "label": "Énergie et eau",
+   "central": 450,
+   "min": 300,
+   "max": 700,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E : machine espresso, four, froid ; à remplacer par devis fournisseur"
+  },
+  {
+   "label": "Assurance multirisque et RC professionnelle",
+   "central": 150,
+   "min": 90,
+   "max": 250,
+   "tva": 0.0,
+   "statut": "indispensable",
+   "source": "E : sur devis"
+  },
+  {
+   "label": "Expert-comptable, social et juridique courant",
+   "central": 450,
+   "min": 300,
+   "max": 650,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E : SAS avec 3-4 salariés"
+  },
+  {
+   "label": "Caisse certifiée, logiciels, terminal de paiement",
+   "central": 100,
+   "min": 60,
+   "max": 150,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E"
+  },
+  {
+   "label": "Internet et téléphone",
+   "central": 50,
+   "min": 35,
+   "max": 70,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E"
+  },
+  {
+   "label": "Entretien, maintenance machine, hygiène, petits consommables",
+   "central": 300,
+   "min": 200,
+   "max": 450,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E"
+  },
+  {
+   "label": "Déchets et biodéchets",
+   "central": 60,
+   "min": 30,
+   "max": 100,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E"
+  },
+  {
+   "label": "Banque",
+   "central": 30,
+   "min": 20,
+   "max": 50,
+   "tva": 0.0,
+   "statut": "indispensable",
+   "source": "E"
+  },
+  {
+   "label": "Musique diffusée (SACEM/SPRE)",
+   "central": 40,
+   "min": 25,
+   "max": 70,
+   "tva": 0.2,
+   "statut": "facultatif",
+   "source": "E"
+  },
+  {
+   "label": "Dégustations offertes en vitrine",
+   "central": 150,
+   "min": 80,
+   "max": 300,
+   "tva": 0.0,
+   "statut": "indispensable",
+   "source": "H : ≈ 40 mini-dégustations par jour à 0,12 € ; réponse n° 1 du panel"
+  },
+  {
+   "label": "Analyses safran par lot (ISO 3632) et contrôle qualité",
+   "central": 80,
+   "min": 40,
+   "max": 150,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E : coût par analyse à demander à un laboratoire ; ≈ 1 lot/mois"
+  },
+  {
+   "label": "Divers et imprévus d'exploitation",
+   "central": 250,
+   "min": 150,
+   "max": 400,
+   "tva": 0.2,
+   "statut": "indispensable",
+   "source": "E"
+  }
+ ],
+ "marketing": {
+  "B_lancement": 5800,
+  "B_mensuel": 650,
+  "_note": "PROVISOIRE : budget B estimé avant l'étape marketing ; recalculé ensuite dans founder/marketing.md.",
+  "retenu": "B"
+ },
+ "investissement": [
+  {
+   "label": "Dépôt de garantie (3 mois de loyer HT)",
+   "ht": 20000,
+   "min": 13333,
+   "max": 40000,
+   "tva": 0.0,
+   "nature": "depot",
+   "statut": "indispensable",
+   "mois": -2,
+   "source": "E : 3 mois dans les deux annonces comparables de la rue (V) ; 2 à 6 mois possibles"
+  },
+  {
+   "label": "Honoraires d'agence (preneur)",
+   "ht": 24000,
+   "min": 0,
+   "max": 24000,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable si agence",
+   "mois": -2,
+   "source": "V : 30 % du loyer annuel HT dans les deux annonces comparables ; 0 € si le local est loué en direct"
+  },
+  {
+   "label": "Droit au bail / pas-de-porte",
+   "ht": 0,
+   "min": 0,
+   "max": 100000,
+   "tva": 0.0,
+   "nature": "immobilisation_non_amortie",
+   "statut": "inconnu",
+   "mois": -2,
+   "source": "C : inconnu ; comparables de la rue « sans droit au bail » (V). Variable critique en sensibilité"
+  },
+  {
+   "label": "Rédaction du bail, avocat, création de la société",
+   "ht": 4000,
+   "min": 2000,
+   "max": 7000,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": -3,
+   "source": "E"
+  },
+  {
+   "label": "Loyer et charges pendant les travaux (2 mois)",
+   "ht": 14933,
+   "min": 0,
+   "max": 22400,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable sauf franchise",
+   "mois": -1,
+   "source": "Calcul : 2 × (6 666,67 + 800) ; franchise négociable"
+  },
+  {
+   "label": "Travaux d'aménagement (comptoir, électricité, plomberie, sol, éclairage, peinture, accessibilité)",
+   "ht": 55000,
+   "min": 30000,
+   "max": 95000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 9,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E : 400–1 300 €/m² selon l'état du local ; inconnu avant la visite"
+  },
+  {
+   "label": "Architecte d'intérieur / maîtrise d'œuvre",
+   "ht": 6000,
+   "min": 0,
+   "max": 12000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 9,
+   "statut": "différable",
+   "mois": -2,
+   "source": "E : 8–12 % des travaux"
+  },
+  {
+   "label": "Enseigne, vitrophanie, signalétique (avec déclaration préalable)",
+   "ht": 4000,
+   "min": 2000,
+   "max": 8000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  },
+  {
+   "label": "Machine espresso 2 groupes",
+   "ht": 9500,
+   "min": 5000,
+   "max": 13000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "V/E : ≈ 10 900 € HT pour une La Marzocco Linea Classic S (forum) ; reconditionnée 5 000–7 000 € (E)"
+  },
+  {
+   "label": "Moulins (espresso + décaféiné/filtre), filtration d'eau",
+   "ht": 3500,
+   "min": 2000,
+   "max": 5000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "V/E : Mahlkönig E65S GbW 1 734,71 € TTC"
+  },
+  {
+   "label": "Four à viennoiseries, froid positif et négatif, vitrine réfrigérée",
+   "ht": 9000,
+   "min": 6000,
+   "max": 14000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  },
+  {
+   "label": "Lave-vaisselle professionnel, plonge, petit matériel, vaisselle réemployable",
+   "ht": 5500,
+   "min": 3500,
+   "max": 8000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  },
+  {
+   "label": "Mobilier (tabourets, tables basses) et présentoirs de vente",
+   "ht": 8000,
+   "min": 4000,
+   "max": 15000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  },
+  {
+   "label": "Caisse certifiée, terminal, tablette, balance",
+   "ht": 1500,
+   "min": 800,
+   "max": 2500,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 3,
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  },
+  {
+   "label": "Congélateur glaces (format pots du partenaire, sans vitrine à boules)",
+   "ht": 1500,
+   "min": 0,
+   "max": 6000,
+   "tva": 0.2,
+   "nature": "immobilisation",
+   "amort_ans": 5,
+   "statut": "différable",
+   "mois": -1,
+   "source": "V/E : vitrine à boules 1 250–6 360 € HT ; congélateur simple ≈ 1 000–2 000 €"
+  },
+  {
+   "label": "Crème : analyses (vieillissement, microbiologie, nutrition), étiquetage, lancement façonnier",
+   "ht": 6000,
+   "min": 3500,
+   "max": 10000,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": -2,
+   "source": "E : aucun devis"
+  },
+  {
+   "label": "Identité de marque, design packaging, site vitrine",
+   "ht": 8000,
+   "min": 3000,
+   "max": 20000,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable (version minimale)",
+   "mois": -2,
+   "source": "E : voir founder/brand.md"
+  },
+  {
+   "label": "Dépôt de marque INPI et recherches d'antériorité",
+   "ht": 1000,
+   "min": 350,
+   "max": 2500,
+   "tva": 0.0,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": -3,
+   "source": "E : taxe INPI à vérifier ; conseil en propriété industrielle en option"
+  },
+  {
+   "label": "Recrutement, formation hygiène (HACCP), salaires avant ouverture (2 semaines)",
+   "ht": 4500,
+   "min": 2500,
+   "max": 7000,
+   "tva": 0.0,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": 0,
+   "source": "E"
+  },
+  {
+   "label": "Communication de lancement (budget B)",
+   "ht": 5800,
+   "min": 5800,
+   "max": 58000,
+   "tva": 0.2,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": 0,
+   "source": "Calcul founder/marketing.md"
+  },
+  {
+   "label": "Stock initial (safran conditionné, pots de crème, café, emballages)",
+   "ht": 9000,
+   "min": 6000,
+   "max": 14000,
+   "tva": 0.1,
+   "nature": "stock",
+   "statut": "indispensable",
+   "mois": 0,
+   "source": "E : 1er lot de crème (100 kg ≈ 2 800 €), 400 g de safran conditionné, emballages, café"
+  },
+  {
+   "label": "Assurances, frais bancaires et divers avant ouverture",
+   "ht": 2000,
+   "min": 1000,
+   "max": 3500,
+   "tva": 0.1,
+   "nature": "charge_preouverture",
+   "statut": "indispensable",
+   "mois": -1,
+   "source": "E"
+  }
+ ],
+ "tva": {
+  "delai_remboursement_credit_mois": 2,
+  "_note": "Régime réel normal mensuel supposé : la TVA nette du mois m est payée en m+1 ; un crédit de TVA est remboursé environ 2 mois après la demande (E, délai non garanti)."
+ },
+ "reserve_aleas": {
+  "taux": 0.1,
+  "_note": "10 % des dépenses d'investissement et de pré-ouverture hors dépôt (E : travaux et équipements dans un local ancien non visité)."
+ },
+ "capacite": {
+  "utilisation": 0.85,
+  "facteur_deux_personnes": 1.8,
+  "secondes_encaissement_ticket": 20
+ }
+}

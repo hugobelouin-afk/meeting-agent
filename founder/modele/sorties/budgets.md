@@ -1,6 +1,6 @@
 # Budgets d'ouverture comparés — La Saffranerie
 
-Scénario de volume **central** dans les trois cas : on ne suppose pas que dépenser plus fait vendre plus (voir founder/marketing.md pour la contribution nécessaire). Montants HT sauf mention ; hypothèses v1 — 13/10/2026 (avant les étapes ops et marketing).
+Scénario de volume **central** dans les trois cas : on ne suppose pas que dépenser plus fait vendre plus (voir founder/marketing.md pour la contribution nécessaire). Montants HT sauf mention ; hypothèses v2 — 13/10/2026 (après les étapes marketing et ops).
 
 | poste | statut | minimal viable | confortable | ambitieux |
 | --- | --- | ---: | ---: | ---: |
@@ -23,21 +23,21 @@ Scénario de volume **central** dans les trois cas : on ne suppose pas que dépe
 | Identité de marque, design packaging, site vitrine | indispensable (version minimale) | 3 000 € | 8 000 € | 20 000 € |
 | Dépôt de marque INPI et recherches d'antériorité | indispensable | 350 € | 1 000 € | 2 500 € |
 | Recrutement, formation hygiène (HACCP), salaires avant ouverture (2 semaines) | indispensable | 2 500 € | 4 500 € | 7 000 € |
-| Communication de lancement (budget B) | indispensable | 5 800 € | 17 400 € | 58 000 € |
+| Communication de lancement (budget B) | indispensable | 6 800 € | 20 400 € | 68 000 € |
 | Stock initial (safran conditionné, pots de crème, café, emballages) | indispensable | 6 000 € | 9 000 € | 14 000 € |
 | Assurances, frais bancaires et divers avant ouverture | indispensable | 1 000 € | 2 000 € | 3 500 € |
-| **Total investissements et pré-ouverture HT** | | 136 383 € | 214 333 € | 359 433 € |
+| **Total investissements et pré-ouverture HT** | | 137 383 € | 217 333 € | 369 433 € |
 
 | financement | minimal viable | confortable | ambitieux |
 | --- | ---: | ---: | ---: |
-| 1. Dépenses et engagements avant ouverture (HT) | 130 383 € | 205 333 € | 345 433 € |
-| 2. Stock initial + TVA avancée au creux | 28 007 € | 45 667 € | 14 000 € |
-| 3. Pertes d'exploitation jusqu'au creux | 11 362 € | 14 482 € | 161 404 € |
-| Besoin maximal simulé (24 mois) | 169 751 € | 265 481 € | 520 837 € |
-| 4. Réserve pour aléas | 11 038 € (10 %) | 27 800 € (15 %) | 48 815 € (15 %) |
-| **Total à mobiliser** | **180 789 €** | **293 281 €** | **569 652 €** |
-| Communication : lancement / mensuel | 5 800 € / 650 € | 17 400 € / 1 950 € | 58 000 € / 6 500 € |
+| 1. Dépenses et engagements avant ouverture (HT) | 131 383 € | 208 333 € | 355 433 € |
+| 2. Stock initial + TVA avancée au creux | 28 207 € | 46 267 € | 14 000 € |
+| 3. Pertes d'exploitation jusqu'au creux | 11 455 € | 14 575 € | 161 143 € |
+| Besoin maximal simulé (24 mois) | 171 045 € | 269 175 € | 530 576 € |
+| 4. Réserve pour aléas | 11 138 € (10 %) | 28 250 € (15 %) | 50 315 € (15 %) |
+| **Total à mobiliser** | **182 183 €** | **297 425 €** | **580 891 €** |
+| Communication : lancement / mensuel | 6 800 € / 650 € | 20 400 € / 1 950 € | 68 000 € / 6 500 € |
 | Point mort (tickets/jour) | 91 | 98 | 122 |
-| EBE année 1 (central, sans hausse de ventes) | −26 509 € | −42 109 € | −96 709 € |
-| EBE année 2 | 9 816 € | −5 784 € | −60 384 € |
-| Trésorerie cumulée à 24 mois (hors apport) | −155 047 € | −264 717 € | −520 837 € |
+| EBE année 1 (central, sans hausse de ventes) | −26 215 € | −41 815 € | −96 415 € |
+| EBE année 2 | 9 783 € | −5 817 € | −60 417 € |
+| Trésorerie cumulée à 24 mois (hors apport) | −155 786 € | −267 456 € | −530 576 € |

@@ -1,6 +1,6 @@
 # Sources des chiffres du modèle — La Saffranerie
 
-Généré à partir de `founder/modele/hypotheses.json` (v1 — 13/10/2026 (avant les étapes ops et marketing)). Étiquettes : **C** communiqué par le porteur ; **V** vérifié (lien et date dans `founder/recherches/notes.md`) ; **E** estimation (fourchette) ; **H** hypothèse à tester. Aucun devis n'a été obtenu : toute ligne E ou H doit être remplacée par un devis ou une mesure.
+Généré à partir de `founder/modele/hypotheses.json` (v2 — 13/10/2026 (après les étapes marketing et ops)). Étiquettes : **C** communiqué par le porteur ; **V** vérifié (lien et date dans `founder/recherches/notes.md`) ; **E** estimation (fourchette) ; **H** hypothèse à tester. Aucun devis n'a été obtenu : toute ligne E ou H doit être remplacée par un devis ou une mesure.
 
 ## Données communiquées et paramètres clés
 
@@ -28,8 +28,8 @@ Généré à partir de `founder/modele/hypotheses.json` (v1 — 13/10/2026 (avan
 | Croissant pur beurre | 2,20 € | 0,62 € | 0,00 | 0 | croissant 70 g surgelé premium cuit sur place, 0,45–0,85 € (E) ; artisan livré 1,00–1,40 € (E) |
 | Croissant fourré à la crème au safran | 4,50 € | 0,62 € | 0,00 | 30 | fourré à la demande (30 g) |
 | Formule « Dégustation » : latte au safran + croissant au safran | 9,50 € | 1,34 € | 0,05 | 30 | TVA à emporter mixte (10 % boisson, 5,5 % viennoiserie) : taux moyen pondéré 8,8 % (E) |
-| Glace safran (partenaire) 1 boule | 4,00 € | 0,67 € | 0,00 | 0 | bac partenaire ≈ 9,50 €/L (E, aucun devis) ; boule 70 ml |
-| Glace 2 boules (safran + un parfum) | 6,50 € | 1,33 € | 0,00 | 0 | E |
+| Glace safran (partenaire) 1 boule | 4,00 € | 0,98 € | 0,00 | 0 | bac partenaire ≈ 14 €/L (E : 50 % du prix public de 28 €/L du Bac à Glaces, aucun devis) ; boule 70 ml |
+| Glace 2 boules (safran + un parfum) | 6,50 € | 1,96 € | 0,00 | 0 | E |
 | Crêpe sucre | 4,50 € | 0,28 € | 0,00 | 0 | pâte maison 0,20 + sucre/beurre 0,08 (E) |
 | Crêpe Nutella | 6,00 € | 0,49 € | 0,00 | 0 | 30 g de pâte à tartiner à ≈ 9,50 €/kg (E) |
 | Crêpe à la crème au safran | 7,00 € | 0,20 € | 0,00 | 35 | E |
@@ -70,6 +70,7 @@ Généré à partir de `founder/modele/hypotheses.json` (v1 — 13/10/2026 (avan
 | Dégustations offertes en vitrine | 150 € | 80 € – 300 € | H : ≈ 40 mini-dégustations par jour à 0,12 € ; réponse n° 1 du panel |
 | Analyses safran par lot (ISO 3632) et contrôle qualité | 80 € | 40 € – 150 € | E : coût par analyse à demander à un laboratoire ; ≈ 1 lot/mois |
 | Divers et imprévus d'exploitation | 250 € | 150 € – 400 € | E |
+| CFE (provision) | 100 € | 50 € – 250 € | E : base = immobilisations au 31/12 de l'année de création (art. 1478-II CGI) ; montant à demander au service des impôts des entreprises |
 
 ## Investissements et dépenses avant ouverture
 
@@ -94,7 +95,7 @@ Généré à partir de `founder/modele/hypotheses.json` (v1 — 13/10/2026 (avan
 | Identité de marque, design packaging, site vitrine | 8 000 € | 3 000 € – 20 000 € | indispensable (version minimale) | E : voir founder/brand.md |
 | Dépôt de marque INPI et recherches d'antériorité | 1 000 € | 350 € – 2 500 € | indispensable | E : taxe INPI à vérifier ; conseil en propriété industrielle en option |
 | Recrutement, formation hygiène (HACCP), salaires avant ouverture (2 semaines) | 4 500 € | 2 500 € – 7 000 € | indispensable | E |
-| Communication de lancement (budget B) | 5 800 € | 5 800 € – 58 000 € | indispensable | Calcul founder/marketing.md |
+| Communication de lancement (budget B) | 6 800 € | 6 800 € – 68 000 € | indispensable | Calcul founder/marketing.md (B) |
 | Stock initial (safran conditionné, pots de crème, café, emballages) | 9 000 € | 6 000 € – 14 000 € | indispensable | E : 1er lot de crème (100 kg ≈ 2 800 €), 400 g de safran conditionné, emballages, café |
 | Assurances, frais bancaires et divers avant ouverture | 2 000 € | 1 000 € – 3 500 € | indispensable | E |
 
