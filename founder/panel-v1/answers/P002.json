@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Mon café crème à emporter, je le paie un peu plus de 3 euros au même comptoir depuis des années ; 6,50 € pour un latte parfumé, c'est le double, et je ne vais pas changer ma routine pour ça.",
+  "objection": "Ça va être beaucoup trop sucré, un truc pour touristes et pour Instagram, avec du safran comme prétexte pour faire payer plus cher.",
+  "would_change_my_mind": "Pouvoir goûter gratuitement une petite tasse, et constater que c'est peu sucré, avec un vrai goût de safran et un bon café derrière.",
+  "price_too_cheap": 2.5,
+  "price_cheap": 3.5,
+  "price_expensive": 4.8,
+  "price_too_expensive": 6
+}

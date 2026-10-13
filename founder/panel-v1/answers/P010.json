@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Le safran, je le mets dans mon risotto, pas dans mon café. Je ne vais pas m'arrêter rue du Dragon pour un latte qui me paraît un gadget, même si le prix ne me fait pas peur.",
+  "objection": "J'ai peur que le safran dans un latte, ce soit surtout une couleur jolie et un goût médicinal ou noyé dans le lait, et que je paie l'idée plus que le plaisir.",
+  "would_change_my_mind": "Une petite dégustation offerte en passant devant la vitrine qui me prouve que ça a vraiment bon goût.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 6.5,
+  "price_too_expensive": 8
+}

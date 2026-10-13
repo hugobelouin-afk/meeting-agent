@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Même en séjour à Paris, je me trouve vite mon café et ma boulangerie, et le matin à la Croix-Rouge je vais là où je sais déjà ce que je bois. Un latte au safran avec crème, chocolat blanc et sucre infusé, ça ne me tente pas assez pour changer mon trajet.",
+  "objection": "Ça va être beaucoup trop sucré, et à 6,50 € je paie surtout l'idée du safran plus qu'un bon café.",
+  "would_change_my_mind": "Une version peu ou pas sucrée du latte au safran, que je pourrais goûter gratuitement en passant.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 6,
+  "price_too_expensive": 8
+}

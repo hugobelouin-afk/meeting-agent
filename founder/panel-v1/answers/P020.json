@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Mon café du matin, je le prends à emporter et je regarde ce que je paie : 6,50 € pour un latte, même au safran, c'est trois fois mon petit noir. Je suis là trois nuits, je passerai peut-être devant, mais je n'entrerai pas pour ça, et leurs pots de crème au chocolat blanc, je ne les finirais jamais.",
+  "objection": "6,50 € pour un café au lait aromatisé, c'est un prix de touriste ; je ne vois pas ce que le safran ajoute à mon café du matin à part la facture.",
+  "would_change_my_mind": "Un petit format à goûter vers 3,50-4 €, pour essayer une fois sans avoir l'impression de me faire avoir.",
+  "price_too_cheap": 2.5,
+  "price_cheap": 3.5,
+  "price_expensive": 5,
+  "price_too_expensive": 6.5
+}

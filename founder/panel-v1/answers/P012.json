@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Je suis en vacances à Saint-Germain, une vitrine orange dédiée au safran m'arrête, et 6,50 € pour goûter une fois un latte au safran, c'est le prix d'un souvenir, pas d'un café du quotidien. Comme je cuisine pour des amis le week-end, je repartirais peut-être aussi avec 0,5 g de filaments, mais je ne reviendrai pas chaque jour, je ne suis là que quelques jours.",
+  "objection": "J'ai peur que ce soit un gadget pour touristes : un latte sucré coloré où l'on ne sent presque pas le safran, et des filaments dont je ne peux pas juger la qualité.",
+  "would_change_my_mind": "Si la vitrine fait boutique à touristes ou si le prix affiché dépasse 8 € pour le latte, je passe mon chemin sans entrer.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 7.5,
+  "price_too_expensive": 10
+}

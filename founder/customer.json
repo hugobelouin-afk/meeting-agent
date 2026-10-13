@@ -1,0 +1,39 @@
+{
+  "business": "La Saffranerie (nom de travail) : boutique-café du safran, 11-13 rue du Dragon, Paris 6e",
+  "target": "Personnes qui passent ou viendraient rue du Dragon, à Saint-Germain-des-Prés (Paris 6e) : habitants et actifs du quartier, Parisiens aisés venant d'autres arrondissements, touristes français et étrangers. Les revenus sont annuels et exprimés en euros (le symbole $ du gabarit désigne ici des euros)",
+  "where": "Paris 6e, rue du Dragon (entre le boulevard Saint-Germain et le carrefour de la Croix-Rouge)",
+  "age": [20, 72],
+  "segments": [
+    {"name": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)", "share": 0.35, "income": [32000, 160000]},
+    {"name": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès", "share": 0.25, "income": [45000, 180000]},
+    {"name": "Touriste en visite à Paris (étranger ou français de province)", "share": 0.40, "income": [30000, 200000]}
+  ],
+  "behaviours": [
+    {"name": "Café quotidien", "share": 0.20, "how": "Prend un café à emporter presque chaque jour sur son trajet, au même endroit, et regarde le prix."},
+    {"name": "Gourmand curieux qui partage", "share": 0.15, "how": "Essaie les nouveautés gourmandes et publie des photos ou vidéos sur Instagram ou TikTok."},
+    {"name": "Acheteur de cadeaux et d'épicerie fine", "share": 0.15, "how": "Achète régulièrement des produits fins à offrir ou à rapporter, habitué de La Grande Épicerie."},
+    {"name": "Cuisinier amateur exigeant", "share": 0.10, "how": "Cuisine avec des épices de qualité, s'intéresse à l'origine et se méfie des produits frelatés."},
+    {"name": "Attentif au sucre et à la santé", "share": 0.15, "how": "Évite les boissons sucrées et les gourmandises trop riches, lit les étiquettes."},
+    {"name": "Promeneur qui décide en dix secondes", "share": 0.15, "how": "Passe devant la vitrine, entre si elle intrigue et si le prix affiché ne fait pas peur."},
+    {"name": "Fidèle à ses adresses", "share": 0.10, "how": "A son café et sa boulangerie, change rarement d'habitudes."}
+  ],
+  "objections": [
+    "Le safran, c'est pour la paella ou le risotto, pas pour un café",
+    "J'ai peur d'un goût trop fort, médicinal ou métallique",
+    "Ça va être beaucoup trop sucré",
+    "Ça ressemble à un gadget pour touristes et pour Instagram",
+    "Trop cher pour un café de tous les jours",
+    "Comment savoir si leur safran est vraiment meilleur qu'ailleurs ?",
+    "J'ai déjà mon café et ma boulangerie à côté",
+    "Un pot de crème au chocolat blanc, je ne le finirai jamais"
+  ],
+  "habits": [
+    "tu passes au carrefour de la Croix-Rouge en allant au travail",
+    "tu fais tes courses à La Grande Épicerie le samedi",
+    "tu te promènes à Saint-Germain-des-Prés entre deux musées",
+    "tu cuisines le week-end pour des amis",
+    "tu suis des comptes food parisiens sur Instagram",
+    "tu loges trois nuits dans un hôtel du 6e arrondissement",
+    "tu rapportes toujours un souvenir gourmand de voyage"
+  ]
+}

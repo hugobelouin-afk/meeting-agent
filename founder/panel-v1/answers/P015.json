@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "values",
+  "reason": "Je ne suis à Paris que quelques jours et j'ai déjà mon café et ma boulangerie près de l'hôtel. Ce menu, c'est surtout du sucré : sucre infusé, crème au chocolat blanc, Nutella, glace. Tout ce que j'évite.",
+  "objection": "Je ne sais pas si le latte au safran est sucré. Rien n'indique la quantité de sucre, et la boisson signature est carrément faite avec un sucre infusé, donc je me méfie de tout le reste.",
+  "would_change_my_mind": "Savoir clairement que le latte au safran est servi sans sucre ajouté (ou qu'on peut le demander nature), idéalement vu sur un compte food parisien que je suis.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

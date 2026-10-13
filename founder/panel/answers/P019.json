@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Le latte au safran, je goûte la gorgée offerte et je m'arrête là : le safran, c'est pour mon risotto du samedi, pas pour un café. Mais un safran dont on m'affiche l'origine, l'année de récolte et l'analyse ISO, avec remboursement si ça ne correspond pas, ça je l'achète, en 1 g pour moi ou en coffret à 24 € à offrir quand je suis invitée.",
+  "objection": "Je suis à La Grande Épicerie toutes les semaines, à deux pas, et j'y trouve déjà du safran ; je ne vois pas pourquoi je ferais un détour régulier pour une maison dont la vitrine, c'est un latte au safran qui ressemble à un gadget pour touristes.",
+  "would_change_my_mind": "Pour revenir souvent plutôt qu'une fois : qu'on me montre comment l'utiliser en cuisine (recettes, conseils de dosage pour un risotto ou une bouillabaisse) et que leur safran soit nettement meilleur que celui de La Grande Épicerie à prix égal.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 6.5,
+  "price_too_expensive": 8
+}

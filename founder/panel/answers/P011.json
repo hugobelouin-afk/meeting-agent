@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason": "C'est sur mon chemin à la Croix-Rouge et une gorgée offerte ne m'engage à rien ; un latte au safran, c'est assez insolite pour que je le goûte et que je le poste. Si c'est bon, je reviens une fois avec la formule croissant, mais je n'en ferai pas mon café de tous les jours.",
+  "reason_code": "other",
+  "objection": "Le safran dans un café, j'ai peur que ce soit un gadget : goût médicinal ou métallique qui écrase le café, joli en photo mais pas quelque chose qu'on a envie de reboire.",
+  "would_change_my_mind": "Si la gorgée offerte à l'entrée a un goût de pharmacie ou ne sent que le safran, je ne paie pas le latte.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

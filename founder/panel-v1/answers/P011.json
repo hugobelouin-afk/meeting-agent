@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Je passe à la Croix-Rouge tous les matins, alors une boisson qui vire à l'orange devant moi, je la goûte et je la filme au moins une fois. Mais c'est la curiosité qui m'achète, pas l'envie de safran dans mon café.",
+  "objection": "Le safran, pour moi, c'est la paella ou le risotto. Dans un latte j'ai peur d'un goût médicinal ou d'un simple gadget coloré pour Instagram, et à 6,50 € je ne reviens pas pour un gadget.",
+  "would_change_my_mind": "Pour revenir chaque semaine, il faudrait que le goût me surprenne vraiment à la première gorgée, quelque chose de subtil et pas amer, et pas seulement une jolie couleur.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

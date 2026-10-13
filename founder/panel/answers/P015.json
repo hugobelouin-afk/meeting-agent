@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Je suis à Paris pour quelques jours et j'ai déjà mon café et ma boulangerie près de l'hôtel. Je prendrais volontiers la gorgée offerte par curiosité, mais je ne vois pas pourquoi je reviendrais payer 6 € un latte au safran alors que tout le reste de la carte, croissant fourré et crème, c'est exactement le sucré que j'évite.",
+  "objection": "Un latte au safran sans sucre, je me demande si c'est vraiment bon ou si ça a un goût médicinal, et la crème et le croissant au chocolat blanc sont trop riches pour moi. Ça ressemble à une curiosité pour Instagram plus qu'à mon café du matin.",
+  "would_change_my_mind": "Que la gorgée offerte soit le latte vraiment sans sucre et qu'elle me plaise franchement, avec les ingrédients du latte affichés clairement.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

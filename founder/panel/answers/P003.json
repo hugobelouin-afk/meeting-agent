@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Je loge à deux rues, la dégustation est gratuite, et un safran dont on m'affiche le lot, la récolte et l'analyse ISO 3632 avec remboursement si ça ne colle pas, c'est exactement ce que je ne trouve pas ailleurs. Je repars avec 1 g de filaments pour ma cuisine, et peut-être un latte en passant, mais c'est tout.",
+  "objection": "Je veux voir les filaments avant de payer : s'il y a des styles jaunes ou des brisures, je n'y crois plus, et une analyse affichée par le vendeur lui-même ne vaut pas grand-chose si on ne sait pas quel labo l'a faite. Le reste, les crèmes et le croissant au chocolat blanc, c'est du sucré pour touristes : un pot de crème au chocolat blanc, je ne le finirai jamais.",
+  "would_change_my_mind": "Si l'analyse ISO 3632 n'est pas d'un laboratoire indépendant nommé, ou si les filaments en pot ont l'air ternes et cassés, je ressors sans rien.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

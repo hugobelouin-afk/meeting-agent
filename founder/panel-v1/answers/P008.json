@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Une boisson qui vire à l'orange sous mes yeux, rue du Dragon, c'est exactement le genre de nouveauté que je viens tester exprès pour la filmer et la poster. J'y passerai une fois un samedi pour goûter le latte au safran et la signature, mais je ne traverse pas Paris toutes les semaines pour un latte.",
+  "objection": "J'ai peur que ce soit beaucoup trop sucré : sucre infusé, chocolat blanc, crème au safran, Nutella... si le safran disparaît sous le sucre, c'est un gadget à 8 € et je ne reviens pas.",
+  "would_change_my_mind": "Pouvoir demander le latte peu ou pas sucré, avec un vrai goût de safran qui se sent, et des retours de comptes food que je suis disant que ce n'est pas écœurant : là je reviendrais régulièrement et j'achèterais des filaments pour la maison.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7.5,
+  "price_too_expensive": 9.5
+}

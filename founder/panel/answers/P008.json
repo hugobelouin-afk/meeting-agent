@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Une maison du safran rue du Dragon, avec l'origine et l'analyse ISO affichées, c'est exactement le genre de nouveauté que je vais goûter et filmer pour mes stories ; je prends le latte au safran sans sucre, une fois, pour voir. Mais je n'habite pas le quartier, donc je n'y repasse que si le goût m'a vraiment marqué.",
+  "objection": "J'ai peur que ce soit écœurant : le croissant fourré crème au safran et chocolat blanc, ça sonne beaucoup trop sucré, et le safran peut vite tourner au goût médicinal ; un latte à 6 € qui a le goût de lait sucré coloré en jaune, je ne le reprends pas.",
+  "would_change_my_mind": "Que la gorgée offerte à l'entrée ait un vrai goût de safran, net et pas sucré ; là je reviendrais et j'achèterais un gramme de filaments à emporter.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7.5,
+  "price_too_expensive": 9
+}

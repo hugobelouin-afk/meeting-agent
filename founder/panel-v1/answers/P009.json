@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Je suis à Paris pour quelques jours et j'aime filmer les trucs gourmands que je n'ai jamais vus ; un latte au safran rue du Dragon, je le goûte une fois par curiosité et pour la vidéo, même si je doute que ce soit bon. Je n'y retournerai sans doute pas pendant le séjour, il y a trop d'autres cafés à essayer.",
+  "objection": "Pour moi le safran c'est pour la paella ou le risotto ; dans un café j'ai peur d'un goût médicinal ou d'un simple colorant jaune pour touristes, à 6,50 € le gobelet.",
+  "would_change_my_mind": "Une file d'attente ou aucun tabouret libre quand je passe : à 71 ans je ne fais pas la queue debout pour une curiosité, je continue mon chemin.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7.5,
+  "price_too_expensive": 10
+}

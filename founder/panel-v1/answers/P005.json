@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "6,50 € pour un latte, même au safran, c'est trop cher pour un café, et en voyage je retourne au petit café que je connais déjà près de mon hôtel. La couleur qui change, c'est joli, mais ça ne me fait pas changer d'habitude.",
+  "objection": "Payer 6,50 € ou 8 € pour une boisson qui reste un café, alors qu'un crème au comptoir coûte moitié moins, et je ne suis même pas sûre d'aimer le goût du safran dans un café.",
+  "would_change_my_mind": "Une petite dégustation gratuite en passant devant la boutique, pour savoir si le goût me plaît avant de payer.",
+  "price_too_cheap": 2.5,
+  "price_cheap": 3.5,
+  "price_expensive": 5,
+  "price_too_expensive": 6.5
+}

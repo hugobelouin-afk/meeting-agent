@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Je ne suis à Paris que quelques jours : une dégustation gratuite rue du Dragon, j'entre, et un latte au safran à 6 € à Saint-Germain, ça reste raisonnable pour une fois. Je repartirais sans doute avec 1 g de safran pour cuisiner le week-end pour mes amis, mais je ne reviendrai pas tous les jours.",
+  "objection": "Pour un café de tous les jours, c'est trop cher, et je ne sais pas si le safran dans un latte, c'est un vrai goût ou juste un gadget pour touristes.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 7.5,
+  "price_too_expensive": 9
+}

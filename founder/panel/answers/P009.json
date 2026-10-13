@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "other",
+  "reason": "Du safran dans un café, j'y crois à moitié, mais la gorgée offerte ne me coûte rien et si elle passe, je prends la formule latte + croissant au safran une fois pour la photo et pour en parler à mon retour. Je ne suis à Paris que quelques jours, donc ce sera une fois, pas une habitude.",
+  "objection": "Pour moi le safran, c'est la paella ou le risotto. J'ai peur d'un latte au goût médicinal ou de foin, et 6 € pour un café qui pourrait me décevoir, ça me retient.",
+  "would_change_my_mind": "Si la gorgée offerte a un goût amer ou médicinal, je n'achète rien et je repars sans même prendre le croissant.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

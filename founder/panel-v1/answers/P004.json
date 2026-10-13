@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Une boisson sucrée qui vire à l'orange et un croissant au chocolat blanc, c'est fait pour la photo et pour les touristes, pas pour moi. J'ai mon café du matin, et le safran de mes risottos du week-end, je l'achète déjà chez mon épicier.",
+  "objection": "Ça sent le concept monté pour Instagram : je doute que le safran soit le vrai sujet, et je ne vois rien qui me dise d'où il vient ni ce qu'il vaut.",
+  "would_change_my_mind": "Voir en vitrine l'origine, la récolte et la catégorie du safran, avec un prix au gramme honnête et une dégustation possible : là j'entrerais pour mes filaments, pas pour le latte.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 6,
+  "price_too_expensive": 8
+}

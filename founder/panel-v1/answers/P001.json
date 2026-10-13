@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "values",
+  "reason": "Tout ce que je vois là est sucré : sucre infusé, crème au chocolat blanc, Nutella, glace. Je fais attention au sucre, et pour trois nuits à l'hôtel je prendrai un café serré au comptoir d'à côté plutôt qu'un latte à 6,50 €.",
+  "objection": "Je ne sais pas combien de sucre il y a dans le latte au safran, et on ne me le dit pas. À 6,50 € pour un café, en plus, je paie la curiosité, pas la boisson.",
+  "would_change_my_mind": "Un latte au safran sans sucre ajouté, avec la teneur en sucre affichée, et pas plus cher qu'un bon crème du quartier.",
+  "price_too_cheap": 3,
+  "price_cheap": 4.5,
+  "price_expensive": 5.5,
+  "price_too_expensive": 7
+}

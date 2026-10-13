@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "Un latte au safran avec sucre infusé, crème au safran et chocolat blanc, j'imagine surtout du sucre et de la couleur où le vrai goût du safran disparaît. Et pour les filaments, je suis de passage : je préfère les acheter là où je connais déjà la provenance, à La Grande Épicerie par exemple.",
+  "objection": "Rien ne me dit d'où vient ce safran, de quelle récolte, ni de quelle catégorie il est. Olympus Croci ne me dit rien, et entre la boisson qui change de couleur et les gaufres au Nutella, ça ressemble à un concept pour touristes plus qu'à une maison sérieuse.",
+  "would_change_my_mind": "Voir sur les pots l'origine précise, l'année de récolte et la catégorie ISO 3632, et pouvoir goûter sur place un latte peu ou pas sucré où l'on sent vraiment le safran.",
+  "price_too_cheap": 4,
+  "price_cheap": 5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

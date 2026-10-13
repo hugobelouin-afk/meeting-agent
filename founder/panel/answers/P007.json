@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon café, je le prends tous les matins au même endroit sur mon trajet, et ce n'est pas rue du Dragon. Si je passe devant, je goûterai volontiers la gorgée offerte, mais je ne traverse pas Paris pour un latte à 6 €.",
+  "objection": "Six euros pour un café, c'est trop cher pour tous les jours, et un latte au safran, j'ai peur que ce soit plus une curiosité pour Instagram qu'un vrai bon café.",
+  "would_change_my_mind": "Qu'un compte food que je suis et en qui j'ai confiance le recommande vraiment, un jour où je suis déjà à Saint-Germain pour autre chose.",
+  "price_too_cheap": 3,
+  "price_cheap": 4,
+  "price_expensive": 5.5,
+  "price_too_expensive": 7
+}

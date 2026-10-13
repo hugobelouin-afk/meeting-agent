@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "quality",
+  "reason": "Ce qui m'intéresse, ce n'est pas le latte, c'est le safran tracé avec l'analyse ISO affichée : un coffret à 24 € ou 1 g à 22 €, c'est exactement le petit cadeau gourmand que j'apporte à un dîner. Comme le latte est servi sans sucre, je le goûterai peut-être une fois en passant, mais je ne vais pas y prendre un café toutes les semaines.",
+  "objection": "La crème au safran et le croissant chocolat blanc, j'ai peur que ce soit écœurant de sucre et que le goût du safran soit écrasé ou ait ce côté médicinal. Et je me méfie un peu de l'effet boutique-concept pour touristes rue du Dragon.",
+  "would_change_my_mind": "Si à la dégustation la crème est trop sucrée ou si le safran a un goût de savon, je ne prendrai même pas le coffret.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

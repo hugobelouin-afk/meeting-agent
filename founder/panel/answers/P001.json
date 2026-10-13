@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Je prendrais volontiers la gorgée offerte en passant, par curiosité, mais 6 € pour un latte, c'est trop cher pour ce que c'est : du lait et quelques filaments. Le petit-déjeuner de l'hôtel me donne déjà mon café, et pour trois nuits je n'en ferai pas une habitude.",
+  "objection": "Six euros pour un café au lait, même au safran, ça reste trop cher, et la dégustation gratuite suffit à satisfaire ma curiosité. Quant au croissant au chocolat blanc, c'est exactement le genre de gourmandise sucrée que j'évite.",
+  "would_change_my_mind": "Une petite tasse au safran, sans sucre, autour de 4 €, qu'on boit au comptoir comme un espresso.",
+  "price_too_cheap": 2.5,
+  "price_cheap": 3.5,
+  "price_expensive": 4.5,
+  "price_too_expensive": 6
+}

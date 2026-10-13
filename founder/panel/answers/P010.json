@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "J'entrerais sûrement pour la gorgée offerte, par curiosité, c'est ma rue après tout. Mais le safran, pour moi, c'est le risotto du dimanche, pas mon café du matin : je goûte, je souris, et je repars avec mon espresso habituel ailleurs.",
+  "objection": "Le safran dans un latte, ça sonne comme un gadget pour touristes ; et du safran pour cuisiner, j'en ai déjà dans mon placard, je n'en rachète pas toutes les semaines.",
+  "would_change_my_mind": "Que la gorgée offerte me bluffe vraiment, ou qu'on me vende d'abord le safran pour mon risotto avec une vraie recette et la preuve de qualité du lot, plutôt que dans une tasse.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 7,
+  "price_too_expensive": 9
+}

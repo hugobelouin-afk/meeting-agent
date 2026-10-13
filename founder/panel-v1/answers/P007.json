@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon café, je le prends tous les matins au même comptoir près de chez moi, et je ne traverse pas Paris pour un latte à 6,50 €. Le safran dans un café, c'est joli sur Instagram, mais ce n'est pas mon café de tous les jours.",
+  "objection": "Trop cher pour un café, et c'est loin de mon trajet : 6,50 € le latte, 8 € la boisson qui change de couleur, ça ressemble à un gadget pour touristes plus qu'à un endroit où je reviendrais.",
+  "would_change_my_mind": "Si un compte food parisien que je suis en disait vraiment du bien et que je passais déjà rue du Dragon pour autre chose, j'entrerais une fois goûter, par curiosité.",
+  "price_too_cheap": 3,
+  "price_cheap": 4,
+  "price_expensive": 5.5,
+  "price_too_expensive": 7
+}

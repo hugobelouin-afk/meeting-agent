@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Même en déplacement, je me trouve vite mon café et ma boulangerie, et le matin je prends mon espresso et mon croissant là-bas sans réfléchir. Un latte au safran, une crème au safran, un croissant au chocolat blanc : ça sonne comme une gourmandise sucrée, pas comme mon café du matin.",
+  "objection": "J'ai peur que ce soit beaucoup trop sucré et un peu parfumé, un truc qu'on goûte une fois pour la curiosité mais qu'on ne boit pas tous les jours.",
+  "would_change_my_mind": "Goûter la gorgée offerte en passant et constater que le latte sans sucre est vraiment peu sucré, avec un vrai goût de café et pas de sirop.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 4.5,
+  "price_expensive": 6.5,
+  "price_too_expensive": 8.5
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "values",
+  "reason": "Je surveille le sucre, et ici presque tout est sucré : boisson au sucre infusé, croissant au chocolat blanc, crêpes au Nutella, glace. Je ne suis à Paris que quelques jours et j'ai déjà mon café et ma boulangerie à côté, je ne vais pas payer 6,50 € pour un latte dont je ne sais même pas combien de sucre il contient.",
+  "objection": "Rien n'indique s'il y a une version sans sucre ou ce que contient vraiment le latte au safran ; ça ressemble à une gourmandise pour touristes, chère et trop sucrée pour moi.",
+  "would_change_my_mind": "Un latte au safran clairement sans sucre ajouté, avec la composition affichée, ou une petite dégustation gratuite ; à la rigueur j'achèterais un petit sachet de safran en filaments comme souvenir.",
+  "price_too_cheap": 3,
+  "price_cheap": 4,
+  "price_expensive": 5.5,
+  "price_too_expensive": 7
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "habit",
+  "reason": "Le café en lui-même ne m'attire pas : croissant chocolat blanc, Nutella, sucre qui change de couleur, c'est fait pour Instagram, pas pour moi. Mais j'offre souvent des produits fins, donc j'entrerai une fois par curiosité et je repartirai sans doute avec un pot de crème au safran ou un gramme de filaments à offrir, si l'origine me convainc.",
+  "objection": "Tout a l'air beaucoup trop sucré, et je ne connais pas Olympus Croci : rien ne me dit d'où vient ce safran ni sa qualité, alors qu'à La Grande Épicerie je sais ce que j'achète. Le safran, c'est un produit où l'on se fait facilement avoir.",
+  "would_change_my_mind": "Une origine claire et vérifiable du safran (pays, appellation, catégorie de qualité) avec une dégustation sur place d'un latte peu sucré, pour que je revienne pour autre chose qu'un cadeau.",
+  "price_too_cheap": 3.5,
+  "price_cheap": 5,
+  "price_expensive": 6.5,
+  "price_too_expensive": 8.5
+}
