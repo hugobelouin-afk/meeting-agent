@@ -91,17 +91,17 @@ Temps interne : Hugo environ 2 h par semaine (validation). Le community manager 
 | Livrables | 40 photos, 6 vidéos, 1 communiqué, 4 créateurs payés + 15 invités, 20 hôtels | ≈ 15 vidéos, 6 créateurs payés, agence RP, community manager | 2 grands comptes, 8 micro-créateurs, agence complète, événement |
 | Portée estimée de la publicité payante au lancement | 50 000–200 000 impressions | 150 000–600 000 | 0,5–1,5 million |
 | Ce que cela **ne garantit pas** | — | qu'un visiteur revienne : le réachat dépend du produit | ni la fréquentation (la portée n'est pas une visite), ni le réachat. Un grand compte apporte un pic de curieux pendant quelques jours, surtout des touristes et des curieux qui viennent une fois (panel). |
-| Point mort (tickets/jour, modèle v1) | 91 | 98 | 122 |
+| Point mort (tickets/jour, modèle v2) | 91 | 98 | 122 |
 
-**Contribution commerciale nécessaire pour couvrir la dépense en plus de B**. Hypothèses : contribution de 6,36 € par ticket (modèle v1, `founder/cfo.md`) ; fenêtre de mesure de 6 mois après l'ouverture (lancement + 6 mois de budget mensuel).
+**Contribution commerciale nécessaire pour couvrir la dépense en plus de B**. Hypothèses : contribution de 6,32 € par ticket (modèle v2, `founder/cfo.md`) ; fenêtre de mesure de 6 mois après l'ouverture (lancement + 6 mois de budget mensuel).
 
 | | Dépense en plus de B sur la fenêtre | Tickets en plus nécessaires | Soit par jour, sur 183 jours | Par rapport aux 79 tickets/jour moyens de l'année 1 (central) |
 | --- | ---: | ---: | ---: | ---: |
-| B (contre zéro) | 10 700 € | 1 682 | 9 | +12 % |
-| 3B | 21 400 € | 3 365 | 18 | +23 % |
-| 10B | 96 300 € | 15 142 | 83 | **+105 %** |
+| B (contre zéro) | 10 700 € | 1 693 | 9 | +12 % |
+| 3B | 21 400 € | 3 386 | 19 | +23 % |
+| 10B | 96 300 € | 15 237 | 83 | **+105 %** |
 
-**Lecture.** Multiplier le budget par 3 se justifie si l'on mesure environ 18 tickets de plus par jour pendant 6 mois. **Multiplier par 10 suppose de doubler la fréquentation pendant 6 mois.** C'est hors de portée d'une boutique dont le panel décrit surtout une visite unique. Il faudrait en outre plus de personnel aux heures de pointe, ce qui alourdirait encore le point mort. **Le 10B n'est pas recommandé.** Le 3B ne se défend qu'après une preuve de demande, et seulement si l'on remplace le travail non payé d'Hugo par un community manager.
+**Lecture.** Multiplier le budget par 3 se justifie si l'on mesure environ 19 tickets de plus par jour pendant 6 mois. **Multiplier par 10 suppose de doubler la fréquentation pendant 6 mois.** C'est hors de portée d'une boutique dont le panel décrit surtout une visite unique. Il faudrait en outre plus de personnel aux heures de pointe, ce qui alourdirait encore le point mort. **Le 10B n'est pas recommandé.** Le 3B ne se défend qu'après une preuve de demande, et seulement si l'on remplace le travail non payé d'Hugo par un community manager.
 
 ### Interne, indépendants ou agence
 
@@ -119,7 +119,7 @@ Temps interne : Hugo environ 2 h par semaine (validation). Le community manager 
   - **augmenter** si la contribution attribuée atteint au moins 1,5 fois la dépense de la période ;
   - **maintenir** entre 1 et 1,5 fois ;
   - **réduire** sous 1 fois, ou si les clients amenés ne reviennent pas (moins de 15 % de retour sous 30 jours d'après la carte du quartier).
-- **Le coût maximal pour gagner un client** : contribution de 6,36 € par ticket × 1,2 achat le premier mois (re-test du panel) ≈ **7,60 €** pour un touriste qui ne vient qu'une fois. Pour un voisin qui achèterait six fois dans l'année (hypothèse non démontrée), le plafond monte à ≈ 38 €.
+- **Le coût maximal pour gagner un client** : contribution de 6,32 € par ticket × 1,2 achat le premier mois (re-test du panel) ≈ **7,60 €** pour un touriste qui ne vient qu'une fois. Pour un voisin qui achèterait six fois dans l'année (hypothèse non démontrée), le plafond monte à ≈ 38 €.
 
 ## 4. La campagne de 30 jours (ouverture hypothétique le jeudi 1er avril 2027)
 
@@ -167,7 +167,7 @@ Rappel : aucune citation du panel n'est utilisée comme témoignage. Les accroch
 
 | Indicateur | Seuil qui déclenche un changement | Action |
 | --- | --- | --- |
-| Tickets par jour (moyenne sur 7 jours) contre le point mort (91 en v1) | moins de 70 % du point mort pendant 3 semaines après le mois 2 | revoir horaires, offre et personnel ; réviser la décision de poursuite |
+| Tickets par jour (moyenne sur 7 jours) contre le point mort (91, modèle v2) | moins de 70 % du point mort pendant 3 semaines après le mois 2 | revoir horaires, offre et personnel ; réviser la décision de poursuite |
 | Part des tickets avec safran ou pot | moins de 15 % (hypothèse du modèle : ≈ 23 articles pour 100 tickets) | revoir la vitrine, la dégustation, les formats ; former l'équipe au conseil |
 | Clients revenus sous 30 jours (carte du quartier, fichier) | moins de 15 % | revoir l'offre quotidienne ; ne pas augmenter le budget de communication |
 

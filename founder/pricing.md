@@ -27,8 +27,8 @@ Comparables : voir `founder/competitors.md` (liens). « Prestige acceptable » =
 | Croissant pur beurre | 70 g | 2,20 € | 0,78 € | 62 % | boulangeries 1,22 € en moyenne (max 1,90 €) ; Flore 4,00 € | 1,90–2,40 € | moyen : comparé à Poilâne, à 300 m |
 | **Croissant fourré au safran** | 70 g + 30 g de crème | **4,50 €** | 1,75 € | 58 % | gaufre Méert 3,42 €/pièce ; Flore croissant 4,00 € | 4,00–5,00 € | moyen |
 | Formule « Dégustation » | latte safran + croissant safran | 9,50 € | 2,77 € | 68 % | latte + croissant séparés : 10,50 € | 9,00–10,50 € | faible si l'un des deux est bon |
-| Glace safran, 1 boule (saison, partenaire) | 70 ml | 4,00 € | 0,91 € | 75 % | 3,50–3,90 € (Michelin été 2026) | 3,80–4,50 € | moyen |
-| Glace, 2 boules | 140 ml | 6,50 € | 1,68 € | 72 % | 6,00–6,50 € | 6,00–7,00 € | moyen |
+| Glace safran, 1 boule (saison, partenaire) | 70 ml | 4,00 € | 1,26 € | 66 % | 3,50–3,90 € (Michelin été 2026) | 3,80–4,50 € | moyen |
+| Glace, 2 boules | 140 ml | 6,50 € | 2,37 € | 60 % | 6,00–6,50 € | 6,00–7,00 € | moyen |
 | **Safran 0,5 g** (lot et analyse affichés) | 0,5 g | **12,00 €** | 2,45 € | 78 % | Roellinger Iran 11,50 € les 0,5 g ; Bien Élevées 26 € ; Amazon 6,45 €/g | 10–14 € | moyen : il faut la preuve d'origine |
 | Safran 1 g | 1 g | 22,00 € | 3,81 € | 82 % | Roellinger Espagne 20,25 €/g | 19–25 € | moyen |
 | Safran 2 g | 2 g | 40,00 € | 6,31 € | 83 % | Bien Élevées 5 g : 200 € | 36–44 € | faible (acheteurs avertis) |
@@ -42,17 +42,19 @@ Remarque fiscale : la marge des pots suppose une TVA de 5,5 % (pâte à tartiner
 
 ## 3. Ce que le prix doit rapporter : prix prestigieux acceptable contre prix nécessaire
 
-- **Ticket moyen avec la grille ci-dessus** (scénario central, moyenne annuelle) : **9,61 € TTC** (8,92 € HT), dont 41 % de chiffre en safran, pots et coffrets, pour une contribution de 6,61 € par ticket (74 %).
-- **Prix nécessaire pour rentabiliser** (charges fixes du planning minimal, 17 238 €/mois) :
+Calculs du modèle v2 (`founder/cfo.md`), carte d'ouverture **sans la boisson signature**.
+
+- **Ticket moyen avec la grille ci-dessus** (scénario central, moyenne annuelle) : **9,33 € TTC** (8,66 € HT). Safran, pots et coffrets pèsent 42 % du CA HT. Contribution : 6,32 € par ticket, soit 73 %.
+- **Prix nécessaire pour rentabiliser**, avec les charges fixes du planning minimal (17 140 €/mois) :
 
 | fréquentation | ticket TTC nécessaire | écart avec la grille | lecture |
 | --- | ---: | ---: | --- |
-| 95 tickets/j (croisière centrale) | 9,01 € | −6 % | la grille suffit, avec un peu de marge |
-| 87 tickets/j | 9,61 € | 0 % | point mort exact |
-| 79 tickets/j (moyenne de l'année 1, central) | 10,33 € | +7,5 % | il faudrait des prix 7,6 % plus hauts |
-| 65 tickets/j (croisière prudente) | 12,02 € | +25 % | **hors de la plage acceptable** : le prix ne peut pas compenser un manque de fréquentation |
+| 95 tickets/j (croisière centrale) | 9,00 € | −3,5 % | la grille suffit, de justesse |
+| 91 tickets/j | 9,29 € | ≈ 0 % | point mort |
+| 79 tickets/j (moyenne de l'année 1, central) | 10,31 € | +10,5 % | il faudrait des prix 11 % plus hauts |
+| 65 tickets/j (croisière prudente) | 11,99 € | +28,5 % | **hors de la plage acceptable** : le prix ne compense pas un manque de fréquentation |
 
-**Conclusion** : la grille prestige est cohérente avec le marché et dégage de fortes marges unitaires. Le prix n'est pas le problème. Le problème, c'est le volume. Au-dessous d'environ 85 tickets par jour, il faudrait des hausses de prix que le panel et les comparables rendent improbables.
+**Conclusion** : la grille prestige est cohérente avec le marché et dégage de fortes marges unitaires. Le prix n'est pas le problème ; le volume l'est. Au-dessous d'environ 90 tickets par jour, il faudrait des hausses de prix que le panel et les comparables rendent improbables. À titre indicatif, une hausse de 10 % de tous les prix ramène le point mort à 80 tickets/jour.
 
 ## 4. L'échelle (bon / mieux / meilleur)
 
@@ -72,7 +74,7 @@ Remarque fiscale : la marge des pots suppose une TVA de 5,5 % (pâte à tartiner
 
 1. **Latte au safran à 5,50 € puis à 6,50 €**, en alternant par demi-semaine. On mesure le taux de transformation dégustation → achat et la part de clients qui reviennent.
 2. **Pot de 200 g à 16 € puis à 19 €**, en gardant le pot de 100 g à 10,50 €. On mesure la répartition entre formats.
-3. **Taux d'achat à emporter** : part des tickets qui comprennent du safran ou un pot. L'hypothèse centrale est d'environ 23 articles de safran ou de crème pour 100 tickets en moyenne annuelle (21 hors fêtes), soit 41 % du CA HT ; c'est l'une des données les plus déterminantes du modèle.
+3. **Taux d'achat à emporter** : part des tickets qui comprennent du safran ou un pot. L'hypothèse centrale est d'environ 23 articles de safran ou de crème pour 100 tickets en moyenne annuelle (21 hors fêtes), soit 42 % du CA HT ; c'est l'une des données les plus déterminantes du modèle.
 
 ## 7. Les objections de prix du panel, mot pour mot
 
@@ -84,4 +86,4 @@ Réponses attendues du marketing : faire goûter avant de vendre ; montrer la pr
 
 ## 8. Ce qui a changé dans le modèle
 
-Prix de test du pitch (v1) → grille recommandée : latte au safran 6,50 → **6,00 €** ; pot 200 g 16 → **18 €** ; ajout du pot de 100 g (10,50 €), de la formule Dégustation et du coffret ; crêpes et gaufres reportées ; Nutella retiré. Le modèle (`founder/modele/hypotheses.json`) utilise déjà ces prix ; l'outil du skill founder-cfo a été relancé (`founder/numbers.json`).
+Prix de test du pitch (v1) → grille recommandée : latte au safran 6,50 → **6,00 €** ; pot 200 g 16 → **18 €** ; ajout du pot de 100 g (10,50 €), de la formule Dégustation et du coffret ; crêpes et gaufres reportées ; Nutella retiré. Le modèle (`founder/modele/hypotheses.json`, v2) utilise ces prix ; l'outil du skill founder-cfo a été relancé (`founder/numbers.json`, `founder/cfo-outil.md`). La boisson signature n'entre pas dans le calcul de base.
