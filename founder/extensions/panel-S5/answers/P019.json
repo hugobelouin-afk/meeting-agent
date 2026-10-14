@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Le latte au safran, très peu pour moi, mais du safran en filaments avec l'origine, l'année de récolte et l'analyse ISO affichées, ça m'intéresse pour mes risottos du week-end. Si je passe rue du Dragon en sortant du Bon Marché, je prends 1 g et peut-être une boîte de madeleines à apporter chez des amis.",
+  "objection": "Le safran mis partout, dans le café, les macarons, les madeleines, ça ressemble à un concept à la mode. Et j'ai peur que les madeleines aient ce goût un peu médicinal du safran mal dosé.",
+  "would_change_my_mind": "Si la crème de la dégustation me paraît amère ou médicinale, je ne prendrai rien, pas même le safran.",
+  "price_too_cheap": 6,
+  "price_cheap": 9,
+  "price_expensive": 16,
+  "price_too_expensive": 22
+}

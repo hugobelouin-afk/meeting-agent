@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Je suis de passage, je goûterais la gorgée de latte offerte et je repartirais peut-être avec un sachet de 0,5 g de safran à 12 € en souvenir, parce que l'origine et l'analyse sont affichées. Mais les macarons, la crème et les croissants fourrés, c'est trop sucré pour moi, je n'en prendrais pas.",
+  "objection": "Presque tout est sucré : macarons, crème, croissant fourré, entremets. À part le safran en filaments et le latte sans sucre, il n'y a rien pour quelqu'un qui surveille son sucre, et j'ai déjà mon café et ma boulangerie.",
+  "would_change_my_mind": "Des macarons ou une pâtisserie au safran vraiment moins sucrés, avec la teneur en sucre indiquée sur l'étiquette.",
+  "price_too_cheap": 6,
+  "price_cheap": 9,
+  "price_expensive": 13,
+  "price_too_expensive": 16
+}

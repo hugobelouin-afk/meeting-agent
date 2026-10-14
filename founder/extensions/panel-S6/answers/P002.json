@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "J'ai mon café, au même comptoir, tous les matins, et je ne vais pas changer pour payer 3 € l'espresso. Je goûterai peut-être la gorgée offerte en passant à la Croix-Rouge, mais macarons, crème et croissant au chocolat blanc, c'est tout ce que je n'achète pas.",
+  "objection": "Ça va être beaucoup trop sucré, et le safran mis partout, ça ressemble à une boutique pour touristes plus qu'à un endroit où l'on revient.",
+  "would_change_my_mind": "Si leur safran en filaments s'avérait vraiment meilleur que celui de mon épicier pour mon risotto, je reviendrais pour ça, pas pour les gâteaux.",
+  "price_too_cheap": 7,
+  "price_cheap": 11,
+  "price_expensive": 16,
+  "price_too_expensive": 21
+}

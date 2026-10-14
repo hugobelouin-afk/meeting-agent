@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Je prendrais volontiers la gorgée de latte offerte en passant, mais je n'achèterais rien : un latte à 6 € ou un croissant à 4,50 €, c'est trop cher pour mon café de tous les jours, et pour rapporter des macarons, j'irais dans une maison que je connais déjà.",
+  "objection": "Je ne connais pas cette adresse et je ne change pas mes habitudes : du safran partout, c'est joli, mais je préfère ma boulangerie et mon café habituels, et 16,50 € les six macarons, c'est le prix des grandes maisons sans en avoir le nom.",
+  "would_change_my_mind": "Que la dégustation offerte à l'entrée me bluffe vraiment, ou qu'une amie de confiance m'y emmène et me dise que leurs macarons au safran valent le détour.",
+  "price_too_cheap": 7,
+  "price_cheap": 11,
+  "price_expensive": 15,
+  "price_too_expensive": 20
+}

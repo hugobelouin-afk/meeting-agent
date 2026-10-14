@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "convenience",
+  "reason": "C'est sur mon chemin, la vitrine de macarons accroche l'oeil et les prix affichés ne font pas peur, donc j'entre. Je prendrais le risotto milanais un midi, parce que là le safran est à sa place, et peut-être un coffret de 6 macarons à offrir ; le latte au safran, je le goûte à l'entrée mais je ne le commande pas.",
+  "objection": "Le safran dans un café ou dans un dessert, ça sent le gadget pour touristes, et ça peut vite avoir un goût médicinal. En plus, pour des macarons, Pierre Hermé est à deux rues : il faut que les leurs soient vraiment bons pour que j'y revienne.",
+  "would_change_my_mind": "Si à la dégustation le safran a un goût amer ou de savon, je ne repasse pas la porte et je reste chez Hermé pour les macarons.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

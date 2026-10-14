@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "J'offre souvent des choses fines quand je suis invitée, et un safran avec l'origine, la récolte et l'analyse affichées, c'est un cadeau sérieux et plus original qu'une énième boîte de chocolats. J'achèterais le coffret pot + safran ou 1 g de filaments une fois pour voir, et peut-être le latte puisqu'il est sans sucre ajouté.",
+  "objection": "Les macarons, la crème au chocolat blanc, les croissants fourrés, tout ça risque d'être beaucoup trop sucré, et des macarons de qualité je n'en manque pas dans le quartier. J'ai aussi peur que ce soit une boutique concept qui mette du safran partout et dilue le produit.",
+  "would_change_my_mind": "Goûter à la dégustation une crème au safran vraiment peu sucrée où le safran domine ; si c'est du sucre d'abord, je reste à La Grande Épicerie.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 19,
+  "price_too_expensive": 24
+}

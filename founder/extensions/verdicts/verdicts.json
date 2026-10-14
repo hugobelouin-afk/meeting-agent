@@ -1,0 +1,102 @@
+{
+ "S0": {
+  "verdict": "Not yet",
+  "checks": [
+   [
+    true,
+    "Each ticket earns $6.32 before fixed costs (73% contribution)."
+   ],
+   [
+    false,
+    "Year 1 operating LOSS: $25,336."
+   ],
+   [
+    true,
+    "Break-even is 91 tickets a day against a capacity of 313."
+   ],
+   [
+    true,
+    "10 of 20 simulated buyers buy (50%, the bar is 25%)."
+   ]
+  ],
+  "year1_profit": -25336.457999999984,
+  "breakeven_per_day": 90.38345936026829,
+  "contribution": 6.321400000000001,
+  "cash_needed": 229069.45799999996
+ },
+ "S5": {
+  "verdict": "Not yet",
+  "checks": [
+   [
+    true,
+    "Each ticket earns $6.85 before fixed costs (71% contribution)."
+   ],
+   [
+    false,
+    "Year 1 operating LOSS: $9,775."
+   ],
+   [
+    true,
+    "Break-even is 86 tickets a day against a capacity of 291."
+   ],
+   [
+    true,
+    "14 of 20 simulated buyers buy (70%, the bar is 25%)."
+   ]
+  ],
+  "year1_profit": -9775.013400000003,
+  "breakeven_per_day": 85.82143795428671,
+  "contribution": 6.8514,
+  "cash_needed": 228772.2958
+ },
+ "S5T": {
+  "verdict": "Profitable",
+  "checks": [
+   [
+    true,
+    "Each ticket earns $7.25 before fixed costs (67% contribution)."
+   ],
+   [
+    true,
+    "Year 1 operating profit: $7,900."
+   ],
+   [
+    true,
+    "Break-even is 87 tickets a day against a capacity of 265."
+   ],
+   [
+    true,
+    "14 of 20 simulated buyers buy (70%, the bar is 25%)."
+   ]
+  ],
+  "year1_profit": 7899.990000000003,
+  "breakeven_per_day": 86.93880648499483,
+  "contribution": 7.2475,
+  "cash_needed": 234303.1075
+ },
+ "S6": {
+  "verdict": "Not yet",
+  "checks": [
+   [
+    true,
+    "Each ticket earns $6.49 before fixed costs (59% contribution)."
+   ],
+   [
+    false,
+    "Year 1 operating LOSS: $17,049."
+   ],
+   [
+    true,
+    "Break-even is 100 tickets a day against a capacity of 263."
+   ],
+   [
+    true,
+    "15 of 20 simulated buyers buy (75%, the bar is 25%)."
+   ]
+  ],
+  "year1_profit": -17048.958600000034,
+  "breakeven_per_day": 99.18944740653991,
+  "contribution": 6.4894,
+  "cash_needed": 257208.17480000004
+ }
+}

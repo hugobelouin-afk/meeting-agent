@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "J'ai mon café, au même comptoir, au même prix, depuis des années, et je n'ai pas envie d'en changer pour un latte à 6 €. Je m'arrêterai peut-être pour la gorgée offerte en passant à la Croix-Rouge, mais crème au safran, chocolat blanc, macarons, tout ça me paraît fait pour des gens qui aiment le sucré, pas pour moi.",
+  "objection": "Ça va être beaucoup trop sucré, et c'est cher pour ce que c'est : 12 € les six madeleines, je les trouve à moins dans le quartier.",
+  "would_change_my_mind": "Goûter une madeleine tiède vraiment peu sucrée, où l'on sent le safran et pas le sucre, et la voir vendue à l'unité à côté d'un espresso à un prix normal.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 11,
+  "price_too_expensive": 15
+}

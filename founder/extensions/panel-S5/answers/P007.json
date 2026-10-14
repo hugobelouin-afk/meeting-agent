@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon café, je le prends tous les matins au même comptoir près de chez moi, pas rue du Dragon. Si je passe à Saint-Germain je goûterai volontiers la dégustation offerte, mais 12 € la boîte de six madeleines, c'est plus que chez mon boulanger, et je n'achète pas ça par réflexe.",
+  "objection": "Le safran dans une madeleine, c'est joli sur Instagram, mais une madeleine reste une madeleine : je ne suis pas sûre que ça vaille le double du prix habituel, et je ne traverse pas Paris pour ça.",
+  "would_change_my_mind": "Avoir besoin d'un petit cadeau pour un dîner le jour où je suis déjà dans le quartier, et que les madeleines tièdes goûtées à l'entrée soient vraiment meilleures que celles que je connais.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 11,
+  "price_too_expensive": 15
+}

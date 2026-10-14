@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "trust",
+  "reason": "Ce qui m'arrête, c'est le lot affiché avec année de récolte et analyse ISO 3632, plus le remboursement si l'analyse ne colle pas : c'est exactement ce qui manque chez les épiciers. Je prendrais 1 g de filaments à 22 € pour cuisiner, et peut-être une madeleine tiède en passant, mais pas la crème au chocolat blanc.",
+  "objection": "Qui fait l'analyse ? Si c'est la maison elle-même qui contrôle son propre safran, l'étiquette ne prouve pas grand-chose. Et tout ce qui est sucré et au chocolat blanc risque de masquer le safran plutôt que de le montrer.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 6,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 19
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je prendrais la gorgée offerte en passant devant, mais pour trois nuits à Paris je ne vais pas mettre mon argent dans un concept « tout safran » qui sent le piège à touristes. Mon café du matin, je le prends dans un vrai café du coin, et mes macarons dans une maison que je connais déjà.",
+  "objection": "Du safran dans le latte, les macarons, les glaces, le risotto... ça fait boutique pensée pour la photo Instagram, et je doute que ce soit vraiment bon plutôt que juste joli et original.",
+  "would_change_my_mind": "Que la dégustation gratuite me surprenne vraiment : si le latte au safran est bon et pas sucré-gadget, je reviendrais le lendemain pour un latte et un petit coffret de macarons à rapporter.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 17,
+  "price_too_expensive": 22
+}

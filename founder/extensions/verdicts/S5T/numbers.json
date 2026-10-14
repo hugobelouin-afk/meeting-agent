@@ -1,0 +1,193 @@
+{
+ "business": "La Saffranerie — S5T — S5 + traiteur (option à tester après ouverture) — unité = ticket moyen, montants HT en euros",
+ "unit": "ticket",
+ "price": 10.8675,
+ "variable": [
+  {
+   "label": "Coûts variables moyens par ticket (matières, safran, crème, achats des extensions, emballages, invendus, carte)",
+   "cost": 3.62
+  }
+ ],
+ "fixed_monthly": [
+  {
+   "label": "Loyer",
+   "cost": 6666.67
+  },
+  {
+   "label": "Charges locatives et taxe foncière refacturées",
+   "cost": 800
+  },
+  {
+   "label": "Énergie et eau",
+   "cost": 450
+  },
+  {
+   "label": "Assurance multirisque et RC professionnelle",
+   "cost": 150
+  },
+  {
+   "label": "Expert-comptable, social et juridique courant",
+   "cost": 450
+  },
+  {
+   "label": "Caisse certifiée, logiciels, terminal de paiement",
+   "cost": 100
+  },
+  {
+   "label": "Internet et téléphone",
+   "cost": 50
+  },
+  {
+   "label": "Entretien, maintenance machine, hygiène, petits consommables",
+   "cost": 300
+  },
+  {
+   "label": "Déchets et biodéchets",
+   "cost": 60
+  },
+  {
+   "label": "Banque",
+   "cost": 30
+  },
+  {
+   "label": "Musique diffusée (SACEM/SPRE)",
+   "cost": 40
+  },
+  {
+   "label": "Dégustations offertes en vitrine",
+   "cost": 150
+  },
+  {
+   "label": "Analyses safran par lot (ISO 3632) et contrôle qualité",
+   "cost": 80
+  },
+  {
+   "label": "Divers et imprévus d'exploitation",
+   "cost": 250
+  },
+  {
+   "label": "CFE (provision)",
+   "cost": 100
+  },
+  {
+   "label": "Personnel (S2_minimal)",
+   "cost": 6813.83
+  },
+  {
+   "label": "Communication mensuelle (B)",
+   "cost": 650
+  },
+  {
+   "label": "Extensions : énergie, maintenance, renforts et heures de production",
+   "cost": 1762.17
+  }
+ ],
+ "startup": [
+  {
+   "label": "Dépôt de garantie (3 mois de loyer HT)",
+   "cost": 20000
+  },
+  {
+   "label": "Honoraires d'agence (preneur)",
+   "cost": 24000
+  },
+  {
+   "label": "Rédaction du bail, avocat, création de la société",
+   "cost": 4000
+  },
+  {
+   "label": "Loyer et charges pendant les travaux (2 mois)",
+   "cost": 14933
+  },
+  {
+   "label": "Travaux d'aménagement (comptoir, électricité, plomberie, sol, éclairage, peinture, accessibilité)",
+   "cost": 55000
+  },
+  {
+   "label": "Architecte d'intérieur / maîtrise d'œuvre",
+   "cost": 6000
+  },
+  {
+   "label": "Enseigne, vitrophanie, signalétique (avec déclaration préalable)",
+   "cost": 4000
+  },
+  {
+   "label": "Machine espresso 2 groupes",
+   "cost": 9500
+  },
+  {
+   "label": "Moulins (espresso + décaféiné/filtre), filtration d'eau",
+   "cost": 3500
+  },
+  {
+   "label": "Four à viennoiseries, froid positif et négatif, vitrine réfrigérée",
+   "cost": 9000
+  },
+  {
+   "label": "Lave-vaisselle professionnel, plonge, petit matériel, vaisselle réemployable",
+   "cost": 5500
+  },
+  {
+   "label": "Mobilier (tabourets, tables basses) et présentoirs de vente",
+   "cost": 8000
+  },
+  {
+   "label": "Caisse certifiée, terminal, tablette, balance",
+   "cost": 1500
+  },
+  {
+   "label": "Congélateur glaces (format pots du partenaire, sans vitrine à boules)",
+   "cost": 1500
+  },
+  {
+   "label": "Crème : analyses (vieillissement, microbiologie, nutrition), étiquetage, lancement façonnier",
+   "cost": 6000
+  },
+  {
+   "label": "Identité de marque, design packaging, site vitrine",
+   "cost": 8000
+  },
+  {
+   "label": "Dépôt de marque INPI et recherches d'antériorité",
+   "cost": 1000
+  },
+  {
+   "label": "Recrutement, formation hygiène (HACCP), salaires avant ouverture (2 semaines)",
+   "cost": 4500
+  },
+  {
+   "label": "Communication de lancement (budget B)",
+   "cost": 6800
+  },
+  {
+   "label": "Stock initial (safran conditionné, pots de crème, café, emballages)",
+   "cost": 9000
+  },
+  {
+   "label": "Assurances, frais bancaires et divers avant ouverture",
+   "cost": 2000
+  },
+  {
+   "label": "Extensions : équipements, développement et premier stock",
+   "cost": 18700
+  }
+ ],
+ "days_per_month": 30,
+ "capacity_per_day": 265,
+ "plan_per_day": 107.3,
+ "ramp_per_day": [
+  72.0,
+  71.6,
+  80.1,
+  81.9,
+  74.5,
+  95.7,
+  98.5,
+  97.2,
+  121.4,
+  89.0,
+  94.1,
+  103.6
+ ],
+ "_note": "Généré par founder/extensions/verdicts.py à partir du modèle des extensions (année 2 pour le ticket moyen, année 1 pour la montée en puissance). Montants en euros HT ; l'outil affiche '$'."
+}

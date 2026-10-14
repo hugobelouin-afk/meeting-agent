@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Je n'entrerai pas pour les macarons ni pour le latte, mais si la dégustation offerte m'attire à l'intérieur, je prendrai peut-être un gramme de safran à 22 € pour un risotto ou une bouillabaisse du week-end, parce que l'origine et l'analyse affichées, c'est sérieux. Une fois, pour voir, pas une habitude.",
+  "objection": "Du safran dans le café, dans le croissant, dans la madeleine, dans le macaron : ça sent le concept pour touristes et pour Instagram, et j'ai déjà la Grande Épicerie à deux pas pour mon safran.",
+  "would_change_my_mind": "Si à l'intérieur on me fait l'article ou si le safran ne se révèle pas meilleur en cuisine que celui que j'achète déjà, je ne reviens pas.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

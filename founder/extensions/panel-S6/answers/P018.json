@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Le matin j'ai déjà mon café et ma boulangerie, je ne change pas pour une boutique de safran. Je goûterais peut-être la gorgée offerte en passant à la Croix-Rouge, mais un coffret de macarons, c'est exactement le truc trop sucré que je n'achète pas pour moi.",
+  "objection": "Ça va être beaucoup trop sucré : des macarons, une crème au chocolat blanc, des entremets, le safran va juste servir d'excuse pour vendre du sucre.",
+  "would_change_my_mind": "Si la dégustation du latte au safran sans sucre me surprend vraiment, au point que je m'arrête pour en prendre un, mais ce serait pour la boisson, pas pour les macarons.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 18,
+  "price_too_expensive": 24
+}

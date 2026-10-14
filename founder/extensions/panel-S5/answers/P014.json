@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Ce qui m'arrête, c'est le safran en filaments avec l'origine, l'année de récolte et l'analyse ISO 3632 affichées par lot : j'achèterais 1 g à 22 €, peut-être 2 g, pour cuisiner chez moi. Les madeleines et les macarons, je goûte celle qui est offerte mais je n'achète pas la boîte, c'est du sucre avec un prétexte safran.",
+  "objection": "Je me méfie des pâtisseries au safran, ça va être beaucoup trop sucré et le safran n'y est souvent qu'un parfum de façade ; et pour les filaments, je veux voir le vrai rapport d'analyse d'un laboratoire nommé, pas juste un chiffre sur une étiquette.",
+  "would_change_my_mind": "Si l'analyse affichée n'est qu'une mention sur l'étiquette, sans nom de laboratoire ni rapport consultable, je repars sans rien acheter.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 17
+}

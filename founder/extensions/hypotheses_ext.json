@@ -1,0 +1,1170 @@
+{
+ "_lisez_moi": "Hypothèses de l'étude complémentaire « extensions ». La référence S0 = founder/modele/hypotheses.json (v2), non modifiée. Étiquettes : C communiqué, V vérifié (founder/extensions/recherches-extensions.md), E estimation, H hypothèse à tester. Montants HT sauf prix TTC. Demande exprimée en régime de croisière (année 2), scénario central ; prudent = ×0,5 sur la demande additionnelle, favorable = ×1,5 (H).",
+ "version": "ext-v1 — 14/10/2026",
+ "global": {
+  "prix_kwh": 0.22,
+  "src_kwh": "E : électricité professionnelle, à remplacer par le contrat",
+  "taux_horaire_renfort": 12.8,
+  "ratio_cout_renfort": 1.1,
+  "src_renfort": "V/E : SMIC 12,31 €/h (1/6/2026) ; ratio URSSAF interpolé (étude initiale)",
+  "cout_horaire_fondateur": 21.25,
+  "src_fondateur": "étude initiale : coût chargé d'un responsable de boutique",
+  "loyer_m2_mois": 93.9,
+  "src_loyer_m2": "C/calcul : 6 666,67 € / 71 m²",
+  "amort_ans_equipement": 5,
+  "amort_ans_developpement": 3,
+  "reserve": 0.1,
+  "chevauchement_desserts": {
+   "1": 0.0,
+   "2": 0.15,
+   "3": 0.25,
+   "4": 0.35
+  },
+  "src_chevauchement": "H : quand plusieurs familles de desserts coexistent, une partie des achats complémentaires se répartit entre elles au lieu de s'additionner (même client, même appétit, même budget)",
+  "multiplicateur_demande": {
+   "prudent": 0.5,
+   "central": 1.0,
+   "favorable": 1.5
+  },
+  "tickets_base": {
+   "prudent": 65,
+   "central": 95,
+   "favorable": 135
+  },
+  "cout_horaire_production_qualifie": 20.5,
+  "src_production": "E : pâtissier ou cuisinier qualifié ≈ 2 300 € brut/mois (≈ 15,2 €/h) × 1,35 de charges ; provision d'absences du planning S2 (8 %) ajoutée dans le modèle",
+  "surfaces_s0": [
+   [
+    "Vitrine et mur de vente (safran, pots, coffrets)",
+    10
+   ],
+   [
+    "Comptoir et bar",
+    14
+   ],
+   [
+    "Places assises (≈ 11 places)",
+    18
+   ],
+   [
+    "Arrière-boutique (four, froid, plonge, lave-mains)",
+    10
+   ],
+   [
+    "Réserve et vestiaire",
+    6
+   ],
+   [
+    "Sanitaires et circulations",
+    10
+   ],
+   [
+    "Marge non affectée",
+    3
+   ]
+  ],
+  "src_surfaces": "founder/ops.md, section 5 : implantation indicative de l'étude initiale, sans plan ni visite (H)",
+  "places_s0": 11,
+  "m2_par_place": 1.64
+ },
+ "extensions": {
+  "macarons": {
+   "label": "Macarons — gamme de 11 parfums, meuble réfrigéré dédié, partenaire pâtissier (proposition de l'associé)",
+   "famille_dessert": true,
+   "produits": [
+    {
+     "id": "mac_unite",
+     "nom": "Macaron à l'unité",
+     "prix_ttc": 2.8,
+     "tva_sp": 0.1,
+     "tva_emp": 0.055,
+     "part_sp": 0.25,
+     "cout": 1.1,
+     "emb_sp": 0.02,
+     "emb_emp": 0.06,
+     "pieces": 1,
+     "service_s": 30,
+     "src": "prix : V marché 1,70–3,50 €/pièce ; coût partenaire E 0,80–1,50 €"
+    },
+    {
+     "id": "mac_c6",
+     "nom": "Coffret de 6 macarons",
+     "prix_ttc": 16.5,
+     "tva_sp": 0.055,
+     "tva_emp": 0.055,
+     "part_sp": 0.0,
+     "cout": 6.6,
+     "emb_sp": 0.0,
+     "emb_emp": 0.9,
+     "pieces": 6,
+     "service_s": 120,
+     "src": "V : Hévin 10 = 25 € ; Jardin Sucré 8 = 21 € ; boîte E"
+    },
+    {
+     "id": "mac_c12",
+     "nom": "Coffret de 12 macarons",
+     "prix_ttc": 31.0,
+     "tva_sp": 0.055,
+     "tva_emp": 0.055,
+     "part_sp": 0.0,
+     "cout": 13.2,
+     "emb_sp": 0.0,
+     "emb_emp": 1.3,
+     "pieces": 12,
+     "service_s": 180,
+     "src": "V : Hermé 12 = 39 € ; Jardin Sucré 12 = 30 €"
+    }
+   ],
+   "attache_pour_100": {
+    "mac_unite": 10,
+    "mac_c6": 2.5,
+    "mac_c12": 0.6
+   },
+   "substitution": {
+    "mac_unite": [
+     0.4,
+     2.0
+    ],
+    "mac_c6": [
+     0.3,
+     8.5
+    ],
+    "mac_c12": [
+     0.3,
+     10.0
+    ]
+   },
+   "src_substitution": "H : part des ventes qui remplacent un autre achat [part, contribution perdue €] : croissant ou formule pour l'unité ; pot ou coffret de safran pour les coffrets",
+   "nouveaux_tickets_jour": 3.0,
+   "panier_nouveaux": {
+    "mac_unite": 1.5,
+    "mac_c6": 0.6,
+    "mac_c12": 0.15,
+    "_ticket_base": 0.3
+   },
+   "saison": {
+    "2": 1.3,
+    "8": 0.8,
+    "11": 1.4,
+    "12": 2.0
+   },
+   "pertes": {
+    "mode": "rotation",
+    "references": 11,
+    "cycle_j": 3.5,
+    "vie_j": 4,
+    "minimum_par_reference": 24,
+    "presentation_min": 10,
+    "taux_base": 0.04,
+    "src": "E : partenaire en frais, 2 livraisons par semaine, minimum de 24 pièces par parfum et 10 pièces en vitrine (aucun devis)"
+   },
+   "capex": [
+    [
+     "Meuble réfrigéré dédié aux macarons (≈ 1,2 m, sur mesure)",
+     5500
+    ],
+    [
+     "Présentoirs à coffrets",
+     400
+    ]
+   ],
+   "src_capex": "E : vitrines de comptoir 726–858 € HT, vitrine horizontale 1 849 € HT (V) ; meuble sur mesure intégré estimé 4 000–8 000 €",
+   "developpement": 2500,
+   "src_dev": "E : design des coffrets 1 500 € ; dégustations et échantillons avec le partenaire 1 000 €",
+   "stock_initial": 1200,
+   "fixes": {
+    "kwh_jour": 10,
+    "jours_actifs": 365,
+    "maintenance_mois": 25,
+    "renfort_h_semaine": 4,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 1.5
+   },
+   "surface_m2": 2.8,
+   "part_frequence": 0.3
+  },
+  "macarons_court": {
+   "label": "Macarons — gamme courte (5 références, dont 4 au safran), sans meuble dédié, partenaire pâtissier",
+   "famille_dessert": true,
+   "produits": "macarons",
+   "attache_pour_100": {
+    "mac_unite": 8,
+    "mac_c6": 2.2,
+    "mac_c12": 0.5
+   },
+   "substitution": "macarons",
+   "nouveaux_tickets_jour": 2.0,
+   "panier_nouveaux": {
+    "mac_unite": 1.5,
+    "mac_c6": 0.6,
+    "mac_c12": 0.15,
+    "_ticket_base": 0.3
+   },
+   "saison": "macarons",
+   "pertes": {
+    "mode": "rotation",
+    "references": 5,
+    "cycle_j": 3.5,
+    "vie_j": 4,
+    "minimum_par_reference": 24,
+    "presentation_min": 8,
+    "taux_base": 0.04
+   },
+   "capex": [
+    [
+     "Vitrine réfrigérée de comptoir (≈ 0,9 m)",
+     900
+    ],
+    [
+     "Présentoirs à coffrets",
+     400
+    ]
+   ],
+   "src_capex": "V : vitrines de comptoir 726–858 € HT (Hellopro)",
+   "developpement": 2000,
+   "stock_initial": 900,
+   "fixes": {
+    "kwh_jour": 4,
+    "jours_actifs": 365,
+    "maintenance_mois": 10,
+    "renfort_h_semaine": 2,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 1.0
+   },
+   "surface_m2": 1.2,
+   "part_frequence": 0.3
+  },
+  "madeleines": {
+   "label": "Madeleines au safran cuites sur place (pâte maison), à l'unité tièdes et en boîte de 6",
+   "famille_dessert": true,
+   "produits": [
+    {
+     "id": "mad_unite",
+     "nom": "Madeleine au safran tiède",
+     "prix_ttc": 2.2,
+     "tva_sp": 0.1,
+     "tva_emp": 0.055,
+     "part_sp": 0.45,
+     "cout": 0.2,
+     "emb_sp": 0.02,
+     "emb_emp": 0.04,
+     "pieces": 1,
+     "service_s": 25,
+     "src": "prix : V Mesdemoiselles Madeleines 2,50 € (aromatisée, non daté) ; coût matières E 0,15–0,25 € dont 0,01 g de safran"
+    },
+    {
+     "id": "mad_b6",
+     "nom": "Boîte de 6 madeleines au safran (sachet scellé)",
+     "prix_ttc": 10.0,
+     "tva_sp": 0.055,
+     "tva_emp": 0.055,
+     "part_sp": 0.0,
+     "cout": 1.2,
+     "emb_sp": 0.0,
+     "emb_emp": 1.0,
+     "pieces": 6,
+     "service_s": 60,
+     "src": "Prix ramené de 12 € à 10 € après le panel S5 (fourchette acceptable 6–15 €, point d'indifférence 9 €) ; durée de vie du sachet à valider (I)"
+    }
+   ],
+   "attache_pour_100": {
+    "mad_unite": 12,
+    "mad_b6": 1.5
+   },
+   "substitution": {
+    "mad_unite": [
+     0.4,
+     2.0
+    ],
+    "mad_b6": [
+     0.25,
+     8.0
+    ]
+   },
+   "nouveaux_tickets_jour": 1.5,
+   "panier_nouveaux": {
+    "mad_unite": 2.0,
+    "_ticket_base": 0.6
+   },
+   "saison": {
+    "8": 0.85,
+    "12": 1.3
+   },
+   "pertes": {
+    "mode": "taux",
+    "taux": {
+     "mad_unite": 0.08,
+     "mad_b6": 0.03
+    },
+    "src": "E : cuisson par petites fournées dans la journée"
+   },
+   "capex": [
+    [
+     "Moules à madeleines, batteur 5 L, poches",
+     1200
+    ]
+   ],
+   "src_capex": "E ; le four du scénario S0 est réutilisé (pas de double compte)",
+   "developpement": 800,
+   "stock_initial": 300,
+   "fixes": {
+    "kwh_jour": 1.5,
+    "jours_actifs": 365,
+    "maintenance_mois": 0,
+    "renfort_h_semaine": 0,
+    "production_h_semaine": 4,
+    "fondateur_h_semaine": 0.5
+   },
+   "surface_m2": 0.3,
+   "part_frequence": 0.5
+  },
+  "entremets": {
+   "label": "Entremets au safran (partenaire pâtissier) : individuel en vitrine + entremets à partager sur commande",
+   "famille_dessert": true,
+   "produits": [
+    {
+     "id": "ent_ind",
+     "nom": "Entremets individuel au safran",
+     "prix_ttc": 8.5,
+     "tva_sp": 0.1,
+     "tva_emp": 0.055,
+     "part_sp": 0.55,
+     "cout": 3.6,
+     "emb_sp": 0.1,
+     "emb_emp": 0.45,
+     "pieces": 1,
+     "service_s": 70,
+     "src": "prix : V Flore 13–15 € à table ; E comptoir 7–10 € ; coût partenaire E 3–4,50 €"
+    },
+    {
+     "id": "ent_partage",
+     "nom": "Entremets à partager (6 parts), sur commande 48 h",
+     "prix_ttc": 42.0,
+     "tva_sp": 0.055,
+     "tva_emp": 0.055,
+     "part_sp": 0.0,
+     "cout": 17.0,
+     "emb_sp": 0.0,
+     "emb_emp": 1.5,
+     "pieces": 1,
+     "service_s": 120,
+     "src": "E"
+    }
+   ],
+   "attache_pour_100": {
+    "ent_ind": 5,
+    "ent_partage": 0.4
+   },
+   "substitution": {
+    "ent_ind": [
+     0.5,
+     2.2
+    ],
+    "ent_partage": [
+     0.1,
+     5.0
+    ]
+   },
+   "nouveaux_tickets_jour": 1.0,
+   "panier_nouveaux": {
+    "ent_ind": 1.0,
+    "_ticket_base": 0.5
+   },
+   "saison": {
+    "8": 0.8,
+    "12": 1.3
+   },
+   "pertes": {
+    "mode": "rotation",
+    "references": 2,
+    "cycle_j": 2.33,
+    "vie_j": 2.5,
+    "minimum_par_reference": 6,
+    "presentation_min": 4,
+    "taux_base": 0.03,
+    "sans_perte": [
+     "ent_partage"
+    ],
+    "src": "E : 3 livraisons par semaine ; durée de vie des entremets à la crème courte (à valider)"
+   },
+   "capex": [
+    [
+     "Vitrine pâtisserie positive dédiée (≈ 1 m)",
+     3500
+    ]
+   ],
+   "src_capex": "E : 1 849–6 000 € HT (V fiches Hellopro)",
+   "developpement": 1000,
+   "stock_initial": 150,
+   "fixes": {
+    "kwh_jour": 8,
+    "jours_actifs": 365,
+    "maintenance_mois": 20,
+    "renfort_h_semaine": 1,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 1.0
+   },
+   "surface_m2": 2.2,
+   "part_frequence": 0.3
+  },
+  "traiteur": {
+   "label": "Traiteur : un plat au safran du jour livré par un traiteur partenaire (liaison froide), remis en température sur place",
+   "famille_dessert": false,
+   "produits": [
+    {
+     "id": "plat",
+     "nom": "Plat au safran (risotto milanais au safran ; en hiver, velouté safrané)",
+     "prix_ttc": 14.5,
+     "tva_sp": 0.1,
+     "tva_emp": 0.1,
+     "part_sp": 0.45,
+     "cout": 5.5,
+     "emb_sp": 0.15,
+     "emb_emp": 0.7,
+     "pieces": 1,
+     "service_s": 150,
+     "src": "prix : V Flore croque 13 €, salades 20,50–24,50 € à table ; E comptoir 12–16 € ; coût partenaire E 4,50–7 € (aucun traiteur identifié)"
+    }
+   ],
+   "attache_pour_100": {
+    "plat": 5
+   },
+   "substitution": {
+    "plat": [
+     0.5,
+     3.0
+    ]
+   },
+   "nouveaux_tickets_jour": 10,
+   "panier_nouveaux": {
+    "plat": 1.0,
+    "_ticket_base": 0.5
+   },
+   "saison": {
+    "1": 1.1,
+    "2": 1.1,
+    "3": 1.05,
+    "6": 0.9,
+    "7": 0.8,
+    "8": 0.6,
+    "12": 0.9
+   },
+   "pertes": {
+    "mode": "taux",
+    "taux": {
+     "plat": 0.15
+    },
+    "src": "E : DLC de 3 jours sans étude (règle à vérifier), demande du midi variable"
+   },
+   "capex": [
+    [
+     "Four de remise en température compact",
+     3500
+    ],
+    [
+     "Vitrine réfrigérée libre-service",
+     2500
+    ],
+    [
+     "Micro-ondes professionnel",
+     600
+    ],
+    [
+     "Bacs, étiquetage, sonde",
+     400
+    ]
+   ],
+   "src_capex": "E",
+   "developpement": 2500,
+   "stock_initial": 400,
+   "fixes": {
+    "kwh_jour": 6,
+    "jours_actifs": 365,
+    "maintenance_mois": 30,
+    "dechets_mois": 40,
+    "renfort_h_semaine": 17.5,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 3
+   },
+   "pointe_part_unites": 0.35,
+   "surface_m2": 2.0,
+   "part_frequence": 0.4
+  },
+  "glaces": {
+   "label": "Glaces ANGIOLO élargies — vitrine à boules de 6 bacs (safran, vanille, chocolat, pistache + 2 associations au safran)",
+   "famille_dessert": true,
+   "remplace_s0": [
+    "glace_1",
+    "glace_2"
+   ],
+   "produits": [
+    {
+     "id": "gl_1",
+     "nom": "Glace 1 boule (ANGIOLO)",
+     "prix_ttc": 5.0,
+     "tva_sp": 0.1,
+     "tva_emp": 0.1,
+     "part_sp": 0.2,
+     "cout": 1.26,
+     "emb_sp": 0.1,
+     "emb_emp": 0.12,
+     "pieces": 1,
+     "boules": 1,
+     "service_s": 45,
+     "src": "prix : V ANGIOLO 1 boule 5 € (2024) ; coût E 18 €/L × 70 ml (aucun tarif professionnel)"
+    },
+    {
+     "id": "gl_2",
+     "nom": "Glace 2 boules (ANGIOLO)",
+     "prix_ttc": 8.0,
+     "tva_sp": 0.1,
+     "tva_emp": 0.1,
+     "part_sp": 0.2,
+     "cout": 2.52,
+     "emb_sp": 0.1,
+     "emb_emp": 0.12,
+     "pieces": 1,
+     "boules": 2,
+     "service_s": 60,
+     "src": "V : 2 boules 8 € (2024)"
+    }
+   ],
+   "attache_pour_100": {
+    "gl_1": 10,
+    "gl_2": 7.5
+   },
+   "substitution": {
+    "gl_1": [
+     0.1,
+     2.0
+    ],
+    "gl_2": [
+     0.1,
+     2.0
+    ]
+   },
+   "nouveaux_tickets_jour": 4,
+   "panier_nouveaux": {
+    "gl_1": 0.6,
+    "gl_2": 0.5,
+    "_ticket_base": 0.2
+   },
+   "saison_seule": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "saison": {
+    "4": 0.7,
+    "5": 0.9,
+    "6": 1.1,
+    "7": 1.3,
+    "8": 1.2,
+    "9": 0.8
+   },
+   "pertes": {
+    "mode": "bacs",
+    "references": 6,
+    "boules_par_bac": 35,
+    "vie_j": 3,
+    "taux_base": 0.04,
+    "src": "E : bacs de 2,5 L (≈ 35 boules de 70 ml) ; tenue en vitrine supposée de 3 jours (ANGIOLO dit stocker ses glaces au plus un jour)"
+   },
+   "capex": [
+    [
+     "Vitrine à glace 6 bacs (négative)",
+     4500
+    ],
+    [
+     "Bacs, spatules, puits à spatules",
+     300
+    ]
+   ],
+   "src_capex": "V/E : vitrines à bacs de 5 L, 1 250–6 360 € HT ; le congélateur du scénario S0 est conservé pour le stock",
+   "developpement": 1000,
+   "stock_initial": 800,
+   "fixes": {
+    "kwh_jour": 15,
+    "jours_actifs": 183,
+    "maintenance_mois": 25,
+    "renfort_h_semaine": 2,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 1.0
+   },
+   "surface_m2": 2.5,
+   "part_frequence": 0.2
+  },
+  "glaces_pots": {
+   "label": "Glaces ANGIOLO en pots individuels (4 références : safran, safran-vanille, vanille, chocolat), congélateur vitré, sans vitrine à boules",
+   "famille_dessert": true,
+   "remplace_s0": [
+    "glace_1",
+    "glace_2"
+   ],
+   "produits": [
+    {
+     "id": "gl_pot",
+     "nom": "Pot individuel de glace 120 ml (ANGIOLO)",
+     "prix_ttc": 6.0,
+     "tva_sp": 0.1,
+     "tva_emp": 0.1,
+     "part_sp": 0.2,
+     "cout": 2.31,
+     "emb_sp": 0.05,
+     "emb_emp": 0.05,
+     "pieces": 1,
+     "service_s": 25,
+     "src": "E : 18 €/L × 0,12 L + cuillère 0,15 € ; format et tarif à demander à ANGIOLO"
+    }
+   ],
+   "attache_pour_100": {
+    "gl_pot": 15
+   },
+   "substitution": {
+    "gl_pot": [
+     0.1,
+     2.0
+    ]
+   },
+   "nouveaux_tickets_jour": 2,
+   "panier_nouveaux": {
+    "gl_pot": 1.2,
+    "_ticket_base": 0.2
+   },
+   "saison_seule": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "saison": {
+    "4": 0.7,
+    "5": 0.9,
+    "6": 1.1,
+    "7": 1.3,
+    "8": 1.2,
+    "9": 0.8
+   },
+   "pertes": {
+    "mode": "taux",
+    "taux": {
+     "gl_pot": 0.03
+    },
+    "src": "E : pots surgelés conservés à −18 °C"
+   },
+   "capex": [
+    [
+     "Surcoût d'un congélateur vitré de présentation à la place du congélateur prévu en S0 (1 500 €)",
+     700
+    ]
+   ],
+   "src_capex": "E ; le congélateur de S0 (1 500 €) est remplacé, pas doublé",
+   "developpement": 800,
+   "stock_initial": 600,
+   "fixes": {
+    "kwh_jour": 5,
+    "jours_actifs": 183,
+    "maintenance_mois": 10,
+    "renfort_h_semaine": 0,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 0.5
+   },
+   "surface_m2": 0.8,
+   "part_frequence": 0.2
+  },
+  "macarons_reco": {
+   "label": "Macarons — gamme courte de 5 (4 au safran + 1 classique tournant), partenaire livrant surgelé, décongélation chaque jour",
+   "famille_dessert": true,
+   "produits": "macarons",
+   "attache_pour_100": {
+    "mac_unite": 8,
+    "mac_c6": 2.2,
+    "mac_c12": 0.5
+   },
+   "substitution": "macarons",
+   "nouveaux_tickets_jour": 2.0,
+   "panier_nouveaux": {
+    "mac_unite": 1.5,
+    "mac_c6": 0.6,
+    "mac_c12": 0.15,
+    "_ticket_base": 0.3
+   },
+   "saison": "macarons",
+   "pertes": {
+    "mode": "rotation",
+    "references": 5,
+    "cycle_j": 1,
+    "vie_j": 3,
+    "minimum_par_reference": 0,
+    "presentation_min": 6,
+    "taux_base": 0.04,
+    "src": "E : stock surgelé à −18 °C, décongélation quotidienne au réfrigérateur ; tenue après décongélation supposée de 3 jours (I : à obtenir du fournisseur)"
+   },
+   "capex": [
+    [
+     "Vitrine réfrigérée de comptoir (≈ 0,9 m)",
+     900
+    ],
+    [
+     "Présentoirs à coffrets",
+     400
+    ],
+    [
+     "Armoire négative pour le stock de macarons",
+     900
+    ]
+   ],
+   "src_capex": "V : vitrines de comptoir 726–858 € HT (Hellopro) ; armoire négative E",
+   "developpement": 2000,
+   "stock_initial": 1500,
+   "fixes": {
+    "kwh_jour": 7,
+    "jours_actifs": 365,
+    "maintenance_mois": 15,
+    "renfort_h_semaine": 2,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 1.0
+   },
+   "surface_m2": 1.6,
+   "part_frequence": 0.3
+  },
+  "entremets_commande": {
+   "label": "Entremets au safran à partager, sur commande (48 h), sans vitrine ; partenaire pâtissier",
+   "famille_dessert": true,
+   "produits": "entremets",
+   "attache_pour_100": {
+    "ent_ind": 0,
+    "ent_partage": 0.6
+   },
+   "substitution": "entremets",
+   "nouveaux_tickets_jour": 0.3,
+   "panier_nouveaux": {
+    "ent_partage": 1.0,
+    "_ticket_base": 0.3
+   },
+   "saison": "entremets",
+   "pertes": {
+    "mode": "taux",
+    "taux": {
+     "ent_partage": 0.02
+    },
+    "src": "E : fabriqué à la commande ; perte = commandes non retirées"
+   },
+   "capex": [
+    [
+     "Présentation des entremets en photo, carnet de commande",
+     200
+    ]
+   ],
+   "src_capex": "E",
+   "developpement": 600,
+   "stock_initial": 0,
+   "fixes": {
+    "kwh_jour": 0,
+    "jours_actifs": 365,
+    "maintenance_mois": 0,
+    "renfort_h_semaine": 0.5,
+    "production_h_semaine": 0,
+    "fondateur_h_semaine": 0.5
+   },
+   "surface_m2": 0,
+   "part_frequence": 0.5
+  }
+ },
+ "scenarios": {
+  "S0": [],
+  "S1": [
+   "macarons"
+  ],
+  "S1c": [
+   "macarons_court"
+  ],
+  "S2": [
+   "madeleines",
+   "entremets"
+  ],
+  "S2a": [
+   "madeleines"
+  ],
+  "S2b": [
+   "entremets"
+  ],
+  "S3": [
+   "traiteur"
+  ],
+  "S4": [
+   "glaces"
+  ],
+  "S4p": [
+   "glaces_pots"
+  ],
+  "S5": [
+   "madeleines",
+   "macarons_reco",
+   "entremets_commande"
+  ],
+  "S5T": [
+   "madeleines",
+   "macarons_reco",
+   "entremets_commande",
+   "traiteur"
+  ],
+  "S6": [
+   "macarons",
+   "madeleines",
+   "entremets",
+   "traiteur",
+   "glaces"
+  ]
+ },
+ "noms_scenarios": {
+  "S0": "S0 — offre de référence (étude initiale, modèle v2)",
+  "S1": "S1 — S0 + macarons (11 parfums, meuble dédié)",
+  "S1c": "S1c — S0 + macarons, gamme courte (5)",
+  "S2": "S2 — S0 + madeleines et entremets",
+  "S2a": "S2a — S0 + madeleines seules",
+  "S2b": "S2b — S0 + entremets seuls",
+  "S3": "S3 — S0 + traiteur",
+  "S4": "S4 — S0 + glaces élargies (vitrine à boules)",
+  "S4p": "S4p — S0 + glaces élargies en pots",
+  "S5": "S5 — combinaison optimisée : madeleines sur place, macarons gamme courte (surgelé), entremets sur commande",
+  "S6": "S6 — offre complète (toutes les extensions proposées)",
+  "S5T": "S5T — S5 + traiteur (option à tester après ouverture)"
+ },
+ "_part_frequence": "H : part des visites supplémentaires qui viennent de clients existants revenant plus souvent (le reste : nouveaux clients). Sert à la lecture, pas au calcul.",
+ "variantes": [
+  {
+   "id": "S1_surgele",
+   "base": "S1",
+   "famille": "macarons",
+   "label": "Macarons 11 parfums — partenaire livrant surgelé, décongélation chaque jour",
+   "modifs": {
+    "macarons.pertes.cycle_j": 1,
+    "macarons.pertes.vie_j": 3,
+    "macarons.pertes.presentation_min": 6,
+    "macarons.pertes.minimum_par_reference": 0,
+    "macarons.capex": [
+     [
+      "Meuble réfrigéré dédié aux macarons (≈ 1,2 m, sur mesure)",
+      5500
+     ],
+     [
+      "Présentoirs à coffrets",
+      400
+     ],
+     [
+      "Armoire négative pour le stock de macarons",
+      900
+     ]
+    ],
+    "macarons.stock_initial": 2000
+   }
+  },
+  {
+   "id": "S1_industriel",
+   "base": "S1",
+   "famille": "macarons",
+   "label": "Macarons 11 parfums — fabricant industriel surgelé (type MAG'M, Franck Deville), recettes au safran à développer",
+   "modifs": {
+    "macarons.pertes.cycle_j": 1,
+    "macarons.pertes.vie_j": 3,
+    "macarons.pertes.presentation_min": 6,
+    "macarons.pertes.minimum_par_reference": 0,
+    "macarons.produits.mac_unite.cout": 0.7,
+    "macarons.produits.mac_c6.cout": 4.2,
+    "macarons.produits.mac_c12.cout": 8.4,
+    "macarons.attache_pour_100": {
+     "mac_unite": 8,
+     "mac_c6": 2.0,
+     "mac_c12": 0.5
+    },
+    "macarons.nouveaux_tickets_jour": 2.0,
+    "macarons.capex": [
+     [
+      "Meuble réfrigéré dédié aux macarons (≈ 1,2 m, sur mesure)",
+      5500
+     ],
+     [
+      "Présentoirs à coffrets",
+      400
+     ],
+     [
+      "Armoire négative pour le stock de macarons",
+      900
+     ]
+    ],
+    "macarons.developpement": 4000,
+    "macarons.stock_initial": 2000
+   }
+  },
+  {
+   "id": "S1_interne",
+   "base": "S1",
+   "famille": "macarons",
+   "label": "Macarons 11 parfums — fabrication interne par un pâtissier (20 h/semaine), laboratoire pris sur la salle",
+   "modifs": {
+    "macarons.produits.mac_unite.cout": 0.45,
+    "macarons.produits.mac_c6.cout": 2.7,
+    "macarons.produits.mac_c12.cout": 5.4,
+    "macarons.pertes.cycle_j": 2,
+    "macarons.pertes.vie_j": 4,
+    "macarons.pertes.minimum_par_reference": 30,
+    "macarons.fixes.production_h_semaine": 20,
+    "macarons.fixes.cout_horaire": "qualifie",
+    "macarons.capex": [
+     [
+      "Meuble réfrigéré dédié aux macarons (≈ 1,2 m, sur mesure)",
+      5500
+     ],
+     [
+      "Présentoirs à coffrets",
+      400
+     ],
+     [
+      "Four à convection dédié, batteur 10 L, plaques, tapis, poches",
+      9000
+     ]
+    ],
+    "macarons.surface_m2": 8.8,
+    "macarons.developpement": 3500
+   }
+  },
+  {
+   "id": "S1c_tournante",
+   "base": "S1c",
+   "famille": "macarons",
+   "label": "Macarons gamme tournante — 6 parfums présents (4 au safran permanents + 2 classiques par saison)",
+   "modifs": {
+    "macarons_court.pertes.references": 6
+   }
+  },
+  {
+   "id": "S1c_surgele",
+   "base": "S1c",
+   "famille": "macarons",
+   "label": "Macarons gamme courte (5) — partenaire livrant surgelé, décongélation chaque jour",
+   "modifs": {
+    "macarons_court.pertes.cycle_j": 1,
+    "macarons_court.pertes.vie_j": 3,
+    "macarons_court.pertes.presentation_min": 6,
+    "macarons_court.pertes.minimum_par_reference": 0,
+    "macarons_court.capex": [
+     [
+      "Vitrine réfrigérée de comptoir (≈ 0,9 m)",
+      900
+     ],
+     [
+      "Présentoirs à coffrets",
+      400
+     ],
+     [
+      "Armoire négative pour le stock de macarons",
+      900
+     ]
+    ],
+    "macarons_court.stock_initial": 1500
+   }
+  },
+  {
+   "id": "S2a_artisan",
+   "base": "S2a",
+   "famille": "madeleines",
+   "label": "Madeleines livrées cuites par un artisan (servies à température ambiante)",
+   "modifs": {
+    "madeleines.produits.mad_unite.cout": 0.75,
+    "madeleines.produits.mad_b6.cout": 4.5,
+    "madeleines.attache_pour_100": {
+     "mad_unite": 8,
+     "mad_b6": 1.5
+    },
+    "madeleines.pertes.taux": {
+     "mad_unite": 0.12,
+     "mad_b6": 0.05
+    },
+    "madeleines.fixes.production_h_semaine": 0,
+    "madeleines.capex": [],
+    "madeleines.developpement": 500
+   }
+  },
+  {
+   "id": "S2b_commande",
+   "base": "S2b",
+   "famille": "entremets",
+   "label": "Entremets à partager sur commande seulement (48 h), sans vitrine",
+   "modifs": {
+    "entremets.attache_pour_100": {
+     "ent_ind": 0,
+     "ent_partage": 0.6
+    },
+    "entremets.nouveaux_tickets_jour": 0.3,
+    "entremets.panier_nouveaux": {
+     "ent_partage": 1.0,
+     "_ticket_base": 0.3
+    },
+    "entremets.pertes": {
+     "mode": "taux",
+     "taux": {
+      "ent_partage": 0.02
+     }
+    },
+    "entremets.capex": [
+     [
+      "Présentation des entremets en photo, carnet de commande",
+      200
+     ]
+    ],
+    "entremets.fixes": {
+     "kwh_jour": 0,
+     "jours_actifs": 365,
+     "maintenance_mois": 0,
+     "renfort_h_semaine": 0.5,
+     "production_h_semaine": 0,
+     "fondateur_h_semaine": 0.5
+    },
+    "entremets.surface_m2": 0,
+    "entremets.stock_initial": 0,
+    "entremets.developpement": 600
+   }
+  },
+  {
+   "id": "S2b_interne",
+   "base": "S2b",
+   "famille": "entremets",
+   "label": "Entremets fabriqués sur place par un pâtissier (15 h/semaine)",
+   "modifs": {
+    "entremets.produits.ent_ind.cout": 1.6,
+    "entremets.produits.ent_partage.cout": 8.0,
+    "entremets.fixes.production_h_semaine": 15,
+    "entremets.fixes.cout_horaire": "qualifie",
+    "entremets.capex": [
+     [
+      "Vitrine pâtisserie positive dédiée (≈ 1 m)",
+      3500
+     ],
+     [
+      "Cellule de refroidissement rapide",
+      4000
+     ],
+     [
+      "Cercles, moules, petit matériel",
+      1500
+     ]
+    ],
+    "entremets.surface_m2": 6.2,
+    "entremets.developpement": 2000
+   }
+  },
+  {
+   "id": "S3_assemblage",
+   "base": "S3",
+   "famille": "traiteur",
+   "label": "Traiteur — composants livrés, finition sur place (cuisson à l'induction, hotte à recyclage)",
+   "modifs": {
+    "traiteur.produits.plat.cout": 4.0,
+    "traiteur.pertes.taux": {
+     "plat": 0.1
+    },
+    "traiteur.fixes.renfort_h_semaine": 21,
+    "traiteur.capex": [
+     [
+      "Plaque à induction, hotte à recyclage (sans extraction, à valider)",
+      4500
+     ],
+     [
+      "Vitrine réfrigérée libre-service",
+      2500
+     ],
+     [
+      "Micro-ondes professionnel",
+      600
+     ],
+     [
+      "Bacs, étiquetage, sonde",
+      400
+     ]
+    ],
+    "traiteur.surface_m2": 3.0
+   }
+  },
+  {
+   "id": "S3_sur_place",
+   "base": "S3",
+   "famille": "traiteur",
+   "label": "Traiteur — cuisine complète sur place avec un cuisinier CDI (extraction nécessaire)",
+   "modifs": {
+    "traiteur.produits.plat.cout": 2.8,
+    "traiteur.pertes.taux": {
+     "plat": 0.1
+    },
+    "traiteur.fixes.renfort_h_semaine": 10,
+    "traiteur.fixes.salarie_mois": 2750,
+    "traiteur.capex": [
+     [
+      "Cuisine : hotte avec extraction en toiture, piano, cellule de refroidissement, plonge",
+      35000
+     ],
+     [
+      "Vitrine réfrigérée libre-service",
+      2500
+     ]
+    ],
+    "traiteur.surface_m2": 8.0,
+    "traiteur.developpement": 4000
+   }
+  },
+  {
+   "id": "S4_4bacs",
+   "base": "S4",
+   "famille": "glaces",
+   "label": "Glaces ANGIOLO en vitrine à boules de 4 bacs (safran, vanille, chocolat, pistache)",
+   "modifs": {
+    "glaces.pertes.references": 4,
+    "glaces.capex": [
+     [
+      "Vitrine à glace 4 bacs (négative)",
+      3500
+     ],
+     [
+      "Bacs, spatules, puits à spatules",
+      250
+     ]
+    ],
+    "glaces.surface_m2": 2.0
+   }
+  },
+  {
+   "id": "S4_interne",
+   "base": "S4",
+   "famille": "glaces",
+   "label": "Glaces fabriquées sur place (turbine, pasteurisateur) par un glacier saisonnier (12 h/semaine)",
+   "modifs": {
+    "glaces.produits.gl_1.cout": 0.45,
+    "glaces.produits.gl_2.cout": 0.9,
+    "glaces.fixes.production_h_semaine": 12,
+    "glaces.fixes.cout_horaire": "qualifie",
+    "glaces.capex": [
+     [
+      "Vitrine à glace 6 bacs (négative)",
+      4500
+     ],
+     [
+      "Turbine à glace et pasteurisateur",
+      25000
+     ],
+     [
+      "Bacs, spatules, puits à spatules",
+      300
+     ]
+    ],
+    "glaces.surface_m2": 7.5,
+    "glaces.developpement": 3000
+   }
+  }
+ ],
+ "_s5": "S5 retenu après calcul : l'ensemble reste positif dans le cas prudent (+4 366 € par rapport à S0 prudent ; madeleines à l'équilibre, −166 €) et sans aucune visite ajoutée (+8 321 €) ; il tient dans ≈ 2 m² et ≈ 6,5 h salariées par semaine, sans conflit avec la pointe du déjeuner. Les glaces en pots ont été retirées de S5 : avec trois familles de desserts, leur apport devient négatif (chevauchement). Le traiteur est isolé dans S5T : fort potentiel calculé, mais dépendant du bail, d'un partenaire introuvable à ce jour et de la capacité du midi."
+}

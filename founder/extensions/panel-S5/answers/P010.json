@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Je passe rue du Dragon presque tous les jours et la dégustation est offerte, donc j'entrerai par curiosité. Mais je ressortirai sans doute avec un gramme de safran en filaments pour mon risotto, avec l'origine et l'analyse affichées, pas avec un latte.",
+  "objection": "Le safran dans un café ou dans une crème sucrée, ça me paraît un gadget pour touristes. Et 2,20 € la madeleine, c'est cher pour une madeleine, même à Saint-Germain.",
+  "would_change_my_mind": "Si la gorgée de latte ou la crème a un goût de parfum ou de médicament, je ressors sans rien acheter et je ne reviens pas.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 14,
+  "price_too_expensive": 18
+}

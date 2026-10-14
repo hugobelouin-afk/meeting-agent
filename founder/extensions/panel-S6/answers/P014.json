@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Ce qui m'arrête, ce n'est pas la vitrine sucrée, c'est le safran en filaments avec l'origine, l'année de récolte et l'analyse ISO 3632 affichées par lot, plus le remboursement si l'analyse ne colle pas : c'est exactement ce que je cherche pour ne pas me faire refiler du frelaté. Je repartirais avec 1 g à 22 € pour mes risottos et ma paella à la maison. Comme je suis de passage à Paris, ce sera une seule visite.",
+  "objection": "J'ai peur que ce soit d'abord un salon de thé à macarons et à crèmes trop sucrées qui utilise le safran comme gadget, et je veux voir de mes yeux le certificat d'analyse du lot (quel laboratoire, quelle catégorie ISO) avant de croire que c'est sérieux.",
+  "would_change_my_mind": "Si on ne pouvait pas me montrer sur place le bulletin d'analyse du lot que j'achète, je n'achèterais rien.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

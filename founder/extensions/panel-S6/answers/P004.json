@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "J'entrerais pour la dégustation gratuite, et je ressortirais avec un gramme de safran à 22 € pour un risotto du samedi avec des amis, parce que l'analyse du lot est affichée et que c'est remboursé si elle ne correspond pas. Les lattes, les macarons et les glaces, je les laisse aux touristes.",
+  "objection": "Une maison du safran qui fait onze parfums de macarons, des glaces et un plat du jour, ça ressemble à une boutique pour Instagram qui veut tout faire. Pour les macarons, j'ai Pierre Hermé à deux rues, je ne vois pas pourquoi je prendrais ceux-là.",
+  "would_change_my_mind": "Si l'analyse ISO du lot n'était qu'une étiquette sans le vrai résultat sous les yeux, je retournerais acheter mon safran à la Grande Épicerie comme d'habitude.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 18,
+  "price_too_expensive": 22
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "J'ai mon café, au même comptoir, tous les matins, et ces trois nuits à l'hôtel n'y changent rien : je prendrai peut-être la gorgée offerte en passant, mais je ne paierai pas 3 € l'espresso ni 6 € un latte sucré-safrané. Les macarons et les crèmes au chocolat blanc, c'est pour offrir ou pour les touristes, pas pour moi.",
+  "objection": "Tout est sucré et en trop grande quantité pour un homme seul : un pot de crème au chocolat blanc, je ne le finirai jamais, et 16,50 € les six macarons, c'est le prix de Ladurée sans le nom.",
+  "would_change_my_mind": "Un espresso au comptoir à 2 € ou 2,20 €, au prix de mon café habituel ; là je pourrais changer de crèmerie et y prendre ensuite une madeleine de temps en temps.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 16,
+  "price_too_expensive": 21
+}

@@ -22,3 +22,7 @@ Commencer par **`summary.md`** (une demi-page), puis **`one-pager.md`**, puis **
 Recalculer après une nouvelle donnée (devis, bail, comptage, prix de cession) : modifier `modele/hypotheses.json`, puis
 `python3 founder/modele/saffranerie.py && python3 founder/modele/traduire_outil.py && python3 founder/modele/traduire_plan.py`.
 La note de `cfo.md` (sections 1 à 11) est rédigée à la main : la reprendre si les chiffres changent.
+
+## Étude complémentaire du 14/10/2026 : extensions (macarons, pâtisseries, traiteur, glaces)
+
+Dossier séparé **`extensions/`**, qui ne modifie aucun fichier ci-dessus. Commencer par **`extensions/plan-extensions.md`** : recommandation, comparatif S0–S6, verdict par extension, test réel, données manquantes. Index : `extensions/README.md`.

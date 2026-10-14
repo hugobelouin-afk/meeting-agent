@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Je dors trois nuits à deux pas, alors après la gorgée offerte je prendrai peut-être une fois un espresso à 3 € et une madeleine tiède. Ça s'arrête là : pas de pot, pas de boîte, pas de latte à 6 €.",
+  "objection": "Du safran et du sucré partout, et cher pour ce que c'est. Une boîte de 6 madeleines à 12 €, seul à l'hôtel je ne la finirai pas, et le lendemain elles seront sèches.",
+  "would_change_my_mind": "Une petite boîte de 3 madeleines autour de 6 €, qui se garde quelques jours, à rapporter chez moi.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 10,
+  "price_too_expensive": 13
+}

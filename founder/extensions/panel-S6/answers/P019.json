@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Le latte au safran, très peu pour moi, mais un gramme de filaments avec l'année de récolte et l'analyse ISO affichées, pour mon risotto du samedi, ça m'intéresse : je passerai une fois en sortant de La Grande Épicerie, et peut-être le coffret à 24 € pour l'offrir.",
+  "objection": "Le safran dans les macarons et le café, j'ai du mal à y croire, et pour les macarons Pierre Hermé est à deux rues ; je ne viens pas exprès du 16e pour une gorgée de latte.",
+  "would_change_my_mind": "Si les filaments ne sont pas plus convaincants ou sont plus chers que ceux de La Grande Épicerie, je ne reviens pas après le premier achat.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

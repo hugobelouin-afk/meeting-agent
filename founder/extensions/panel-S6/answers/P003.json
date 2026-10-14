@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "trust",
+  "reason": "Ce qui m'arrête, c'est le safran en filaments avec l'analyse ISO 3632 et l'année de récolte affichées par lot, plus le remboursement si ça ne correspond pas : c'est exactement ce qui manque partout ailleurs. J'achèterais 1 g à 22 € pour cuisiner, et je goûterais le latte au safran en passant, mais les pots de crème, les macarons et les croissants fourrés, ce n'est pas pour moi.",
+  "objection": "Je veux voir les vrais chiffres de l'analyse sur le comptoir (pouvoir colorant, catégorie I ou non), pas juste un logo ISO. Et avec onze parfums de macarons, des glaces et un plat du jour, j'ai peur que ce soit une boutique à touristes sucrée où le safran sert de décor.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 17,
+  "price_too_expensive": 22
+}

@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Mason",
+  "age": 68,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 102000,
+  "behaviour": "Attentif au sucre et à la santé",
+  "behaviour_how": "Évite les boissons sucrées et les gourmandises trop riches, lit les étiquettes.",
+  "objection": "Trop cher pour un café de tous les jours",
+  "habit": "tu loges trois nuits dans un hôtel du 6e arrondissement"
+ },
+ {
+  "id": "P002",
+  "name": "Elle",
+  "age": 68,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 113000,
+  "behaviour": "Café quotidien",
+  "behaviour_how": "Prend un café à emporter presque chaque jour sur son trajet, au même endroit, et regarde le prix.",
+  "objection": "Ça va être beaucoup trop sucré",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P003",
+  "name": "Dana",
+  "age": 40,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 117000,
+  "behaviour": "Cuisinier amateur exigeant",
+  "behaviour_how": "Cuisine avec des épices de qualité, s'intéresse à l'origine et se méfie des produits frelatés.",
+  "objection": "Un pot de crème au chocolat blanc, je ne le finirai jamais",
+  "habit": "tu loges trois nuits dans un hôtel du 6e arrondissement"
+ },
+ {
+  "id": "P004",
+  "name": "Noah",
+  "age": 66,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 152000,
+  "behaviour": "Promeneur qui décide en dix secondes",
+  "behaviour_how": "Passe devant la vitrine, entre si elle intrigue et si le prix affiché ne fait pas peur.",
+  "objection": "Ça ressemble à un gadget pour touristes et pour Instagram",
+  "habit": "tu cuisines le week-end pour des amis"
+ },
+ {
+  "id": "P005",
+  "name": "Ana",
+  "age": 57,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 52000,
+  "behaviour": "Fidèle à ses adresses",
+  "behaviour_how": "A son café et sa boulangerie, change rarement d'habitudes.",
+  "objection": "Trop cher pour un café de tous les jours",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P006",
+  "name": "Nadia",
+  "age": 46,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 118000,
+  "behaviour": "Acheteur de cadeaux et d'épicerie fine",
+  "behaviour_how": "Achète régulièrement des produits fins à offrir ou à rapporter, habitué de La Grande Épicerie.",
+  "objection": "Ça va être beaucoup trop sucré",
+  "habit": "tu rapportes toujours un souvenir gourmand de voyage"
+ },
+ {
+  "id": "P007",
+  "name": "Isla",
+  "age": 70,
+  "segment": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès",
+  "income": 169000,
+  "behaviour": "Café quotidien",
+  "behaviour_how": "Prend un café à emporter presque chaque jour sur son trajet, au même endroit, et regarde le prix.",
+  "objection": "Trop cher pour un café de tous les jours",
+  "habit": "tu suis des comptes food parisiens sur Instagram"
+ },
+ {
+  "id": "P008",
+  "name": "Tariq",
+  "age": 46,
+  "segment": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès",
+  "income": 98000,
+  "behaviour": "Gourmand curieux qui partage",
+  "behaviour_how": "Essaie les nouveautés gourmandes et publie des photos ou vidéos sur Instagram ou TikTok.",
+  "objection": "Ça va être beaucoup trop sucré",
+  "habit": "tu suis des comptes food parisiens sur Instagram"
+ },
+ {
+  "id": "P009",
+  "name": "Caleb",
+  "age": 71,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 63000,
+  "behaviour": "Gourmand curieux qui partage",
+  "behaviour_how": "Essaie les nouveautés gourmandes et publie des photos ou vidéos sur Instagram ou TikTok.",
+  "objection": "Le safran, c'est pour la paella ou le risotto, pas pour un café",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P010",
+  "name": "Freya",
+  "age": 44,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 146000,
+  "behaviour": "Promeneur qui décide en dix secondes",
+  "behaviour_how": "Passe devant la vitrine, entre si elle intrigue et si le prix affiché ne fait pas peur.",
+  "objection": "Le safran, c'est pour la paella ou le risotto, pas pour un café",
+  "habit": "tu rapportes toujours un souvenir gourmand de voyage"
+ },
+ {
+  "id": "P011",
+  "name": "Sara",
+  "age": 42,
+  "segment": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès",
+  "income": 132000,
+  "behaviour": "Gourmand curieux qui partage",
+  "behaviour_how": "Essaie les nouveautés gourmandes et publie des photos ou vidéos sur Instagram ou TikTok.",
+  "objection": "Le safran, c'est pour la paella ou le risotto, pas pour un café",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P012",
+  "name": "Aria",
+  "age": 52,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 111000,
+  "behaviour": "Promeneur qui décide en dix secondes",
+  "behaviour_how": "Passe devant la vitrine, entre si elle intrigue et si le prix affiché ne fait pas peur.",
+  "objection": "Trop cher pour un café de tous les jours",
+  "habit": "tu cuisines le week-end pour des amis"
+ },
+ {
+  "id": "P013",
+  "name": "Jordan",
+  "age": 40,
+  "segment": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès",
+  "income": 168000,
+  "behaviour": "Acheteur de cadeaux et d'épicerie fine",
+  "behaviour_how": "Achète régulièrement des produits fins à offrir ou à rapporter, habitué de La Grande Épicerie.",
+  "objection": "Un pot de crème au chocolat blanc, je ne le finirai jamais",
+  "habit": "tu cuisines le week-end pour des amis"
+ },
+ {
+  "id": "P014",
+  "name": "Rafael",
+  "age": 56,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 135000,
+  "behaviour": "Cuisinier amateur exigeant",
+  "behaviour_how": "Cuisine avec des épices de qualité, s'intéresse à l'origine et se méfie des produits frelatés.",
+  "objection": "Ça va être beaucoup trop sucré",
+  "habit": "tu fais tes courses à La Grande Épicerie le samedi"
+ },
+ {
+  "id": "P015",
+  "name": "Liam",
+  "age": 57,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 118000,
+  "behaviour": "Attentif au sucre et à la santé",
+  "behaviour_how": "Évite les boissons sucrées et les gourmandises trop riches, lit les étiquettes.",
+  "objection": "J'ai déjà mon café et ma boulangerie à côté",
+  "habit": "tu suis des comptes food parisiens sur Instagram"
+ },
+ {
+  "id": "P016",
+  "name": "Sofia",
+  "age": 41,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 108000,
+  "behaviour": "Café quotidien",
+  "behaviour_how": "Prend un café à emporter presque chaque jour sur son trajet, au même endroit, et regarde le prix.",
+  "objection": "Ça ressemble à un gadget pour touristes et pour Instagram",
+  "habit": "tu loges trois nuits dans un hôtel du 6e arrondissement"
+ },
+ {
+  "id": "P017",
+  "name": "Poppy",
+  "age": 65,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 42000,
+  "behaviour": "Attentif au sucre et à la santé",
+  "behaviour_how": "Évite les boissons sucrées et les gourmandises trop riches, lit les étiquettes.",
+  "objection": "J'ai déjà mon café et ma boulangerie à côté",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P018",
+  "name": "Yara",
+  "age": 32,
+  "segment": "Touriste en visite à Paris (étranger ou français de province)",
+  "income": 140000,
+  "behaviour": "Fidèle à ses adresses",
+  "behaviour_how": "A son café et sa boulangerie, change rarement d'habitudes.",
+  "objection": "Ça va être beaucoup trop sucré",
+  "habit": "tu passes au carrefour de la Croix-Rouge en allant au travail"
+ },
+ {
+  "id": "P019",
+  "name": "Lena",
+  "age": 61,
+  "segment": "Parisien aisé d'un autre arrondissement, de passage ou venant exprès",
+  "income": 119000,
+  "behaviour": "Acheteur de cadeaux et d'épicerie fine",
+  "behaviour_how": "Achète régulièrement des produits fins à offrir ou à rapporter, habitué de La Grande Épicerie.",
+  "objection": "Le safran, c'est pour la paella ou le risotto, pas pour un café",
+  "habit": "tu cuisines le week-end pour des amis"
+ },
+ {
+  "id": "P020",
+  "name": "Pablo",
+  "age": 68,
+  "segment": "Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e)",
+  "income": 114000,
+  "behaviour": "Café quotidien",
+  "behaviour_how": "Prend un café à emporter presque chaque jour sur son trajet, au même endroit, et regarde le prix.",
+  "objection": "Un pot de crème au chocolat blanc, je ne le finirai jamais",
+  "habit": "tu loges trois nuits dans un hôtel du 6e arrondissement"
+ }
+]

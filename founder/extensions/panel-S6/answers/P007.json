@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Je ne suis pas du quartier, mais quand je passe à Saint-Germain je goûterais la dégustation offerte et je prendrais un coffret de 6 pour l'apporter à un dîner : 16,50 €, c'est le prix d'une bonne maison parisienne. Une fois, pour essayer, pas une habitude : mon café quotidien, je le prends près de chez moi et je ne paierai pas 6 € un latte.",
+  "objection": "Le safran mis partout, j'ai peur que ce soit un effet de mode et que les macarons ne vaillent pas ceux de ma pâtisserie habituelle. Et je ne vais pas traverser Paris exprès chaque semaine.",
+  "would_change_my_mind": "Si la gorgée de dégustation est fade ou si les macarons manquent de fraîcheur, je repars sans rien.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 19,
+  "price_too_expensive": 24
+}

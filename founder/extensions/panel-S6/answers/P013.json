@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "J'apporte toujours quelque chose quand je dîne chez des amis, et un coffret avec du safran dont on affiche l'origine, la récolte et l'analyse ISO, c'est un cadeau qui change des sempiternels macarons ou chocolats. Si je passe rue du Dragon, je repars une fois avec le coffret pot + safran ou des filaments, pas plus.",
+  "objection": "Les macarons, à Saint-Germain, j'ai déjà mes adresses de pâtissiers reconnus à deux pas : je ne vois pas pourquoi je prendrais ceux d'une maison du safran plutôt que chez eux. Et la crème au chocolat blanc, c'est trop sucré, un pot ouvert finit au fond du frigo.",
+  "would_change_my_mind": "Goûter un macaron safran vraiment fin, pas sucré, avec un safran qui se sent nettement : là je pourrais prendre le coffret de 6 en cadeau plutôt que chez mon pâtissier habituel.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 20,
+  "price_too_expensive": 26
+}

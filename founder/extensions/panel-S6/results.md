@@ -1,0 +1,62 @@
+# Panel d'acheteurs simulés (offre S6) : La Saffranerie (nom de travail) : boutique-café du safran, 11-13 rue du Dragon, Paris 6e
+
+**15 achètent · 5 passent** (75 % d'achat) sur 20 acheteurs simulés. Graine 2026 : mêmes profils que le panel v2 (`founder/panel/`).
+
+Ce sont des acheteurs simulés, pas des clients : ce tableau sert à trouver objections et points faibles ; il ne prouve ni la demande ni un taux d'achat. Sortie de panel.py traduite ; aucun chiffre modifié. Lecture comparée : `founder/extensions/consumer-extensions.md`.
+
+## Par segment
+
+| groupe | acheteurs | taux d'achat |
+| --- | ---: | ---: |
+| Parisien aisé d'un autre arrondissement, de passage ou venant exprès | 5 | 100%  (mince) |
+| Habitué du quartier (habite ou travaille à Saint-Germain-des-Prés, 6e-7e) | 7 | 71%  (mince) |
+| Touriste en visite à Paris (étranger ou français de province) | 8 | 62% |
+
+## Par comportement d'achat
+
+| groupe | acheteurs | taux d'achat |
+| --- | ---: | ---: |
+| Attentif au sucre et à la santé | 3 | 100%  (mince) |
+| Cuisinier amateur exigeant | 2 | 100%  (mince) |
+| Promeneur qui décide en dix secondes | 3 | 100%  (mince) |
+| Acheteur de cadeaux et d'épicerie fine | 3 | 100%  (mince) |
+| Gourmand curieux qui partage | 3 | 100%  (mince) |
+| Café quotidien | 4 | 25%  (mince) |
+| Fidèle à ses adresses | 2 | 0%  (mince) |
+
+## Par revenu (en euros)
+
+| groupe | acheteurs | taux d'achat |
+| --- | ---: | ---: |
+| 132 000 € et plus | 7 | 86%  (mince) |
+| 111 000 € à 132 000 € | 7 | 71%  (mince) |
+| moins de 111 000 € | 6 | 67%  (mince) |
+
+## Pourquoi ils passent
+
+| raison | acheteurs | dans leurs mots |
+| --- | ---: | --- |
+| habit | 4 | "J'ai mon café, au même comptoir, tous les matins, et je ne vais pas changer pour payer 3 € l'espresso. Je goûterai peut-être la gorgée offerte en passant à la Croix-Rouge, mais macarons, crème et croissant au chocolat blanc, c'est tout ce que je n'achète pas." (P002) · "Je prendrais volontiers la gorgée de latte offerte en passant, mais je n'achèterais rien : un latte à 6 € ou un croissant à 4,50 €, c'est trop cher pour mon café de tous les jours, et pour rapporter des macarons, j'irais dans une maison que je connais déjà." (P005) |
+| trust | 1 | "Je prendrais la gorgée offerte en passant devant, mais pour trois nuits à Paris je ne vais pas mettre mon argent dans un concept « tout safran » qui sent le piège à touristes. Mon café du matin, je le prends dans un vrai café du coin, et mes macarons dans une maison que je connais déjà." (P016) |
+
+## Pourquoi ils achètent
+
+| raison | acheteurs | dans leurs mots |
+| --- | ---: | --- |
+| quality | 6 | "Je goûte la gorgée offerte en passant, mais je ne prends ni macarons ni pâtisseries, c'est trop sucré pour moi. En revanche, un gramme de safran avec l'analyse et l'année de récolte affichées, à 22 €, je le rapporte à la maison, parce que là, au moins, je sais ce que j'achète." (P001) · "La dégustation offerte me fait entrer, et un safran avec origine, année de récolte et analyse affichées, c'est un souvenir que j'utiliserai vraiment pour mes risottos du week-end : je prends le gramme à 22 € et peut-être un coffret de 6 macarons pour l'hôtel. Mais je suis de passage, donc une fois, pas plus." (P012) |
+| need | 4 | "J'entrerais pour la dégustation gratuite, et je ressortirais avec un gramme de safran à 22 € pour un risotto du samedi avec des amis, parce que l'analyse du lot est affichée et que c'est remboursé si elle ne correspond pas. Les lattes, les macarons et les glaces, je les laisse aux touristes." (P004) · "J'offre souvent des choses fines quand je suis invitée, et un safran avec l'origine, la récolte et l'analyse affichées, c'est un cadeau sérieux et plus original qu'une énième boîte de chocolats. J'achèterais le coffret pot + safran ou 1 g de filaments une fois pour voir, et peut-être le latte puisqu'il est sans sucre ajouté." (P006) |
+| other | 3 | "Une maison du safran rue du Dragon avec lots tracés et dégustation offerte, c'est exactement le genre de nouveauté que je vais tester une fois et filmer pour mon story. Je prendrai le latte au safran sans sucre et un ou deux macarons safran pour juger, pas forcément le coffret." (P008) · "Je passe devant tous les jours et la dégustation offerte me fera entrer. Le latte au safran, je n'y crois pas trop, mais des macarons safran-framboise ou safran-pistache, c'est une curiosité que je goûterai et que je photographierai, et je reviendrai sans doute avant de repartir prendre un coffret à rapporter." (P009) |
+| trust | 1 | "Ce qui m'arrête, c'est le safran en filaments avec l'analyse ISO 3632 et l'année de récolte affichées par lot, plus le remboursement si ça ne correspond pas : c'est exactement ce qui manque partout ailleurs. J'achèterais 1 g à 22 € pour cuisiner, et je goûterais le latte au safran en passant, mais les pots de crème, les macarons et les croissants fourrés, ce n'est pas pour moi." (P003) |
+| convenience | 1 | "C'est sur mon chemin, la vitrine de macarons accroche l'oeil et les prix affichés ne font pas peur, donc j'entre. Je prendrais le risotto milanais un midi, parce que là le safran est à sa place, et peut-être un coffret de 6 macarons à offrir ; le latte au safran, je le goûte à l'entrée mais je ne le commande pas." (P010) |
+
+## Ce qui ferait basculer un non
+
+- Si leur safran en filaments s'avérait vraiment meilleur que celui de mon épicier pour mon risotto, je reviendrais pour ça, pas pour les gâteaux.
+- Que la dégustation offerte à l'entrée me bluffe vraiment, ou qu'une amie de confiance m'y emmène et me dise que leurs macarons au safran valent le détour.
+- Que la dégustation gratuite me surprenne vraiment : si le latte au safran est bon et pas sucré-gadget, je reviendrais le lendemain pour un latte et un petit coffret de macarons à rapporter.
+- Si la dégustation du latte au safran sans sucre me surprend vraiment, au point que je m'arrête pour en prendre un, mais ce serait pour la boisson, pas pour les macarons.
+- Un espresso au comptoir à 2 € ou 2,20 €, au prix de mon café habituel ; là je pourrais changer de crèmerie et y prendre ensuite une madeleine de temps en temps.
+
+Les acheteurs déclarent acheter **1,3 fois** le premier mois en moyenne.
+
+20 acheteurs ont donné les quatre réponses de prix ; « le produit » était le coffret de 6 macarons (voir `founder/extensions/pricing-extensions.md`).
